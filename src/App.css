@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/**
+|--------------------------------------------------
+| For sliding colored boxes
+|--------------------------------------------------
+*/
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.left-div {
+  width: 50%;
+  height: 100vh;
+  background-color: #a9c2de;
+  animation: slide-down 2.5s ease-in-out;
+}
+.right-div {
+  width: 50%;
+  height: 100vh;
+  background-color: #b8cde4;
+  animation: slide-up 2.5s ease-in-out;
+}
+
+@keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(-150%);
+  }
+  100% {
+    t-webkit-transform: translateY(0%);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(150%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
 }
-
-.App-link {
-  color: #61dafb;
+/**
+|--------------------------------------------------
+| For sliding colored boxes
+|--------------------------------------------------
+*/
+.name-title-container {
+  opacity: 0;
+  z-index: 3;
+  top: 50%;
+  width: 100%;
+  position: absolute;
+  /* border: 2px solid black; */
+  text-align: center;
+  transform: translateY(-50%);
+  -webkit-animation: fade-in 1.1s forwards; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  animation: fade-in 1.1s forwards;
+  animation-delay: 2s;
 }
-
-@keyframes App-logo-spin {
+@keyframes fade-in {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+
+.name-header {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 900;
+  font-size: 72px;
+  color: #14181c;
 }
