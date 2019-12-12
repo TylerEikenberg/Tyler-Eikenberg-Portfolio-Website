@@ -20,14 +20,14 @@
 .left-div {
   width: 50%;
   height: 100vh;
-  background-color: #a9c2de;
-  animation: slide-down 2.5s ease-in-out;
+  background-color: #e7eef6;
+  animation: slide-down 1s ease-out;
 }
 .right-div {
   width: 50%;
   height: 100vh;
-  background-color: #b8cde4;
-  animation: slide-up 2.5s ease-in-out;
+  background-color: #e7eef6;
+  animation: slide-up 1s ease-out;
 }
 
 @keyframes slide-down {
@@ -66,9 +66,9 @@
   text-align: center;
   transform: translateY(-200%);
   -webkit-animation: fade-in 1.1s forwards; /* Safari 4.0 - 8.0 */
-  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 1.1s; /* Safari 4.0 - 8.0 */
   animation: fade-in 1.1s forwards;
-  animation-delay: 2s;
+  animation-delay: 1.1s;
 }
 @keyframes fade-in {
   0% {
@@ -81,11 +81,26 @@
   }
 }
 
+@media only screen and (max-width: 620px) {
+  @keyframes fade-in {
+    0% {
+      top: 20%;
+      opacity: 0;
+    }
+    100% {
+      top: 55%;
+      opacity: 1;
+    }
+  }
+}
+
 .name-header {
   font-family: "IBM Plex Serif", serif;
   font-weight: 900;
   font-size: 72px;
-  color: #14181c;
+  color: #283d3b;
+  text-shadow: 2px 5px #fbfdfd;
+  text-decoration: none;
   /* border-bottom: 5px solid black; */
 }
 /**
