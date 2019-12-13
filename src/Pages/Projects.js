@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Projects.css";
 
 function Projects() {
   return (
     <body className="wrapper">
-      <div>HELLO</div>
+      <Link to="/">
+        <div>HELLO</div>
+      </Link>
     </body>
   );
 }
