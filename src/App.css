@@ -109,7 +109,6 @@
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-size: 72px;
-  /* text-shadow: 4px 5px #283d3b; */
   text-shadow: 1px 2px 2px #283d3b;
   color: #fbfdfd;
   text-decoration: none;
@@ -174,13 +173,13 @@
 .nav-links {
   opacity: 0;
   margin: 0rem 0rem 0rem 0rem;
-  width: 10rem;
+  width: 15rem;
   -webkit-animation: fade-in 1.1s forwards; /* Safari 4.0 - 8.0 */
   -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
   animation: fade-in 1.1s forwards;
   animation-delay: 4s;
+  /* border: 2px solid black; */
 }
-
 .nav-links ul {
   display: flex;
   justify-content: space-around;
@@ -191,4 +190,11 @@
   .nav-links {
     margin: 0rem 0rem 0rem -1rem;
   }
+}
+
+.icon-link {
+  transition: transform 0.3s;
+}
+.icon-link:hover {
+  transform: scale(1.1);
 }
