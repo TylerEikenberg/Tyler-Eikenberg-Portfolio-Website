@@ -18,13 +18,13 @@ function App() {
 
 const Home = () => (
   <body className="wrapper">
-    <div className="left-div"></div>
-    <div className="name-title-container">
-      <h1 className="name-header">Tyler Eikenberg</h1>
+    <div className="left-div">
       <div className="subname-container">
         <h3>Software Engineer</h3>
       </div>
-      <i class="fab fa-github-square"></i>
+    </div>
+    <div className="name-title-container">
+      <h1 className="name-header">Tyler Eikenberg</h1>
     </div>
 
     <div className="right-div"></div>
