@@ -1,9 +1,10 @@
 import React from "react";
+import "./Projects.css";
 
 function Projects() {
   return (
     <body className="wrapper">
-      <div>hello</div>
+      <div>HELLO</div>
     </body>
   );
 }
