@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Projects from "./Pages/Projects";
+import Tyler from "./Components/Tyler/Tyler";
 import { mdiGithubBox, mdiLinkedinBox, mdiEmailPlus } from "@mdi/js";
 import Icon from "@mdi/react";
 
@@ -21,6 +22,7 @@ function App() {
 const Home = () => (
   <div className="wrapper">
     <div className="left-div">
+      <Tyler />
       <div className="subname-container">
         <h3>Software Engineer</h3>
         <div className="nav-links">
@@ -44,9 +46,7 @@ const Home = () => (
         </div>
       </div>
     </div>
-    <div className="name-title-container">
-      <h1 className="name-header">Tyler Eikenberg</h1>
-    </div>
+    <div className="name-title-container"></div>
 
     <div className="right-div"></div>
   </div>

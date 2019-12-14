@@ -93,13 +93,45 @@
     }
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 621px) and (max-width: 768px) {
   @keyframes slide-left {
     0% {
       right: 0%;
     }
     100% {
       right: 5%;
+    }
+  }
+}
+@media only screen and (min-width: 411px) and (min-height: 823px) {
+  @keyframes fade-in {
+    0% {
+      top: 0%;
+      opacity: 0;
+    }
+    100% {
+      top: 5%;
+      opacity: 1;
+    }
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  @keyframes fade-in {
+    0% {
+      top: 0%;
+      opacity: 0;
+    }
+    100% {
+      top: 22%;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      right: 0%;
+    }
+    100% {
+      right: 15%;
     }
   }
 }

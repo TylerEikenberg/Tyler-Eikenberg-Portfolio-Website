@@ -1,0 +1,92 @@
+#logo {
+  position: absolute;
+  top: 50;
+  left: 50;
+  animation: fill 0.5s ease forwards 3.5s;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 470px;
+  stroke-dashoffset: 470px;
+  animation: line-anim 3s ease forwards 0.2s;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 578px;
+  stroke-dashoffset: 578px;
+  animation: line-anim 3s ease forwards 0.4s;
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 293px;
+  stroke-dashoffset: 293px;
+  animation: line-anim 3s ease forwards 0.6s;
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 369px;
+  stroke-dashoffset: 369px;
+  animation: line-anim 3s ease forwards 0.8s;
+}
+#logo path:nth-child(5) {
+  stroke-dasharray: 259px;
+  stroke-dashoffset: 259px;
+  animation: line-anim 3s ease forwards 1s;
+}
+#logo path:nth-child(6) {
+  stroke-dasharray: 457px;
+  stroke-dashoffset: 457px;
+  animation: line-anim 3s ease forwards 1.2s;
+}
+#logo path:nth-child(7) {
+  stroke-dasharray: 308px;
+  stroke-dashoffset: 308px;
+  animation: line-anim 3s ease forwards 1.4s;
+}
+#logo path:nth-child(8) {
+  stroke-dasharray: 506px;
+  stroke-dashoffset: 506px;
+  animation: line-anim 3s ease forwards 1.6s;
+}
+#logo path:nth-child(9) {
+  stroke-dasharray: 369px;
+  stroke-dashoffset: 369px;
+  animation: line-anim 3s ease forwards 1.8s;
+}
+#logo path:nth-child(10) {
+  stroke-dasharray: 421px;
+  stroke-dashoffset: 421px;
+  animation: line-anim 3s ease forwards 2s;
+}
+#logo path:nth-child(11) {
+  stroke-dasharray: 405px;
+  stroke-dashoffset: 405px;
+  animation: line-anim 3s ease forwards 2.2s;
+}
+#logo path:nth-child(12) {
+  stroke-dasharray: 369px;
+  stroke-dashoffset: 369px;
+  animation: line-anim 3s ease forwards 2.4s;
+}
+#logo path:nth-child(13) {
+  stroke-dasharray: 259px;
+  stroke-dashoffset: 259px;
+  animation: line-anim 3s ease forwards 2.5s;
+}
+#logo path:nth-child(14) {
+  stroke-dasharray: 538px;
+  stroke-dashoffset: 538px;
+  animation: line-anim 3s ease forwards 2.6s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
