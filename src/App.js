@@ -22,8 +22,9 @@ function App() {
 const Home = () => (
   <div className="wrapper">
     <div className="left-div">
-      <Tyler />
+      <div className="name-wrapper"></div>
       <div className="subname-container">
+        <Tyler />
         <h3>Software Engineer</h3>
         <div className="nav-links">
           <ul>

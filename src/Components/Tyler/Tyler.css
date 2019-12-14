@@ -1,8 +1,14 @@
 #logo {
   position: absolute;
-  top: 50;
-  left: 50;
+  top: 6.5rem;
+  left: 6rem;
   animation: fill 0.5s ease forwards 3.5s;
+}
+@media only screen and (max-width: 620px) {
+  #logo {
+    left: -2.7rem;
+    transform: scale(0.8);
+  }
 }
 
 #logo path:nth-child(1) {
@@ -87,6 +93,6 @@
     fill: transparent;
   }
   to {
-    fill: white;
+    fill: #fff;
   }
 }

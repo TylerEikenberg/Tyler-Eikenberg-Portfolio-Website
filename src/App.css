@@ -56,22 +56,10 @@
 
 /**
 |--------------------------------------------------
-| For name and fade in animation
+| For fade in animation
 |--------------------------------------------------
 */
-.name-title-container {
-  opacity: 0;
-  z-index: 3;
-  top: 50%;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  transform: translateY(-200%);
-  -webkit-animation: fade-in 1.1s forwards, slide-left 1s forwards; /* Safari 4.0 - 8.0 */
-  -webkit-animation-delay: 1.1s, 2.3s; /* Safari 4.0 - 8.0 */
-  animation: fade-in 1.1s forwards, slide-left 1s forwards;
-  animation-delay: 1.1s, 2.3s;
-}
+
 @keyframes fade-in {
   0% {
     top: 10%;
@@ -82,85 +70,10 @@
     opacity: 1;
   }
 }
-/* animation slide-left only plays on large screens */
-@media only screen and (min-width: 620px) {
-  @keyframes slide-left {
-    0% {
-      right: 0%;
-    }
-    100% {
-      right: 30%;
-    }
-  }
-}
-@media only screen and (min-width: 621px) and (max-width: 768px) {
-  @keyframes slide-left {
-    0% {
-      right: 0%;
-    }
-    100% {
-      right: 5%;
-    }
-  }
-}
-@media only screen and (min-width: 411px) and (min-height: 823px) {
-  @keyframes fade-in {
-    0% {
-      top: 0%;
-      opacity: 0;
-    }
-    100% {
-      top: 5%;
-      opacity: 1;
-    }
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  @keyframes fade-in {
-    0% {
-      top: 0%;
-      opacity: 0;
-    }
-    100% {
-      top: 22%;
-      opacity: 1;
-    }
-  }
-  @keyframes slide-left {
-    0% {
-      right: 0%;
-    }
-    100% {
-      right: 15%;
-    }
-  }
-}
-/* animation fade-in plays differently on smaller screens */
-@media only screen and (max-width: 620px) {
-  @keyframes fade-in {
-    0% {
-      top: 20%;
-      opacity: 0;
-    }
-    100% {
-      top: 55%;
-      opacity: 1;
-    }
-  }
-}
 
-.name-header {
-  font-family: "Playfair Display", serif;
-  font-weight: 900;
-  font-size: 72px;
-  text-shadow: 1px 2px 2px #283d3b;
-  color: #fbfdfd;
-  text-decoration: none;
-  /* border-bottom: 5px solid black; */
-}
 /**
 |--------------------------------------------------
-| For name and fade in animation
+| For fade in animation
 |--------------------------------------------------
 */
 /**
@@ -168,6 +81,9 @@
 | For subtitle name animation
 |--------------------------------------------------
 */
+.name-wrapper {
+  padding: 0;
+}
 .subname-container {
   width: 20rem;
   height: 40rem;
