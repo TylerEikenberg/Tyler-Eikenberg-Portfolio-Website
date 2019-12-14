@@ -167,6 +167,7 @@
 |--------------------------------------------------
 */
 .page-links-wrapper {
+  opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -175,6 +176,10 @@
   width: 40rem;
   height: 30rem;
   margin: 0rem 0rem 0rem -12rem;
+  -webkit-animation: fade-in 1.1s forwards; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
+  animation: fade-in 1.1s forwards;
+  animation-delay: 4s;
 }
 @media only screen and (max-width: 620px) {
   .page-links-wrapper {
@@ -193,6 +198,24 @@
   font-family: "Playfair Display", serif;
   font-size: 72px;
   text-decoration: none;
+}
+.page-links-wrapper a:hover {
+  color: #375471;
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  animation: underline 0.5s ease forwards;
+}
+
+@keyframes underline {
+  0% {
+    text-decoration: underline overline;
+
+    text-decoration-color: transparent;
+  }
+  100% {
+    text-decoration: underline overline;
+    text-decoration-color: #375471;
+  }
 }
 
 /**
