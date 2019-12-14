@@ -101,7 +101,7 @@
   opacity: 0;
   color: #4f759b;
   font-size: 26px;
-  font-family: monospace;
+  font-family: "Playfair Display", serif;
   animation: type 2.5s steps(20) forwards;
   animation-delay: 3s;
   overflow: hidden;
@@ -109,7 +109,7 @@
   border-right: 4px solid black;
   width: 18ch;
   /* border: 2px solid black; */
-  right: 90;
+  padding-left: 0.8rem;
 }
 @keyframes type {
   0% {
@@ -171,15 +171,28 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 40rem;
-  height: 50rem;
-  margin: 5rem -4rem 3rem 3rem;
+  height: 30rem;
+  margin: 0rem 0rem 0rem -12rem;
 }
 @media only screen and (max-width: 620px) {
   .page-links-wrapper {
-    margin: 0;
+    z-index: 10;
+    margin: 5rem 0rem 0rem 4rem;
+    width: 8rem;
+    height: 10rem;
   }
+  .page-links-wrapper a {
+    transform: scale(0.5);
+  }
+}
+
+.page-links-wrapper a {
+  color: #4f759b;
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  text-decoration: none;
 }
 
 /**
