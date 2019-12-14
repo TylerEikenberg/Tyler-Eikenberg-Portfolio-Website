@@ -19,14 +19,14 @@
 
 .left-div {
   margin: 0;
-  width: 50%;
+  width: 50vw;
   height: 100vh;
   background-color: #e7eef6;
   animation: slide-down 1s ease-out;
 }
 .right-div {
   margin: 0;
-  width: 50%;
+  width: 50vw;
   height: 100vh;
   background-color: #e7eef6;
   animation: slide-up 1s ease-out;
@@ -90,6 +90,16 @@
     }
     100% {
       right: 30%;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  @keyframes slide-left {
+    0% {
+      right: 0%;
+    }
+    100% {
+      right: 5%;
     }
   }
 }
