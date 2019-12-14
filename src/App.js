@@ -49,7 +49,13 @@ const Home = () => (
     </div>
     <div className="name-title-container"></div>
 
-    <div className="right-div"></div>
+    <div className="right-div">
+      <div className="page-links-wrapper">
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/resume">Resume</a>
+      </div>
+    </div>
   </div>
 );
 

@@ -25,6 +25,8 @@
   animation: slide-down 1s ease-out;
 }
 .right-div {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   width: 50vw;
   height: 100vh;
@@ -158,3 +160,30 @@
 .icon-link:hover {
   transform: scale(1.1);
 }
+
+/**
+|--------------------------------------------------
+| For Page Links
+|--------------------------------------------------
+*/
+.page-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  width: 40rem;
+  height: 50rem;
+  margin: 5rem -4rem 3rem 3rem;
+}
+@media only screen and (max-width: 620px) {
+  .page-links-wrapper {
+    margin: 0;
+  }
+}
+
+/**
+|--------------------------------------------------
+| For Page Links
+|--------------------------------------------------
+*/
