@@ -204,16 +204,14 @@
   font-family: "Playfair Display", serif;
   font-size: 72px;
   animation: underline 0.5s ease forwards;
+  text-decoration: underline;
 }
 
 @keyframes underline {
   0% {
-    text-decoration: underline overline;
-
     text-decoration-color: transparent;
   }
   100% {
-    text-decoration: underline overline;
     text-decoration-color: #375471;
   }
 }

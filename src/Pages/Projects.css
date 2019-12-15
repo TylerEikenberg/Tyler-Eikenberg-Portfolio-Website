@@ -1,4 +1,30 @@
-div {
-  font-size: 20px;
-  color: black;
+.project-page-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: #e7eef6;
+}
+
+.project-page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 1rem;
+  background-color: #353535;
+  font-family: "Pacifico", cursive;
+  animation: fall-down 1s forwards;
+}
+.project-page-header h1 {
+  color: #e7eef6;
+  font-size: 72px;
+  margin-top: 10rem;
+}
+
+@keyframes fall-down {
+  0% {
+    height: 1rem;
+  }
+  100% {
+    height: 20rem;
+  }
 }

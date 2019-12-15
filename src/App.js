@@ -29,17 +29,25 @@ const Home = () => (
         <div className="nav-links">
           <ul>
             <li className="icon-link">
-              <a href="https://github.com/TylerEikenberg">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/TylerEikenberg"
+              >
                 <Icon path={mdiGithubBox} size={3} color="#4F759B" />
               </a>
             </li>
             <li className="icon-link">
-              <a href="https://www.linkedin.com/in/tylereikenberg/">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/tylereikenberg/"
+              >
                 <Icon path={mdiLinkedinBox} size={3} color="#4F759B" />
               </a>
             </li>
             <li className="icon-link">
-              <a href="https://www.linkedin.com/in/tylereikenberg/">
+              <a href="mailto:tylereikenberg8195@gmail.com">
                 <Icon path={mdiEmailPlus} size={3} color="#4F759B" />
               </a>
             </li>
