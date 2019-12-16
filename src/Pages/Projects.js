@@ -2,6 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import "./Projects.css";
 import Project from "../Components/Project/Project";
+import placeholder from "../Assets/cotripper-ph.png";
 
 function Projects() {
   return (
@@ -22,7 +23,17 @@ function Projects() {
       <div className="projects-body">
         <span></span>
         <div className="placeholder-project">
-          <Project>
+          <Project picture={placeholder}>
+            <h1>CoTripper</h1>
+            <h2>Hello</h2>
+          </Project>
+        </div>
+        <span></span>
+      </div>
+      <div className="projects-body">
+        <span></span>
+        <div className="placeholder-project">
+          <Project picture={placeholder}>
             <h1>CoTripper</h1>
           </Project>
         </div>
