@@ -41,5 +41,31 @@
   justify-content: space-between;
   width: 100vw;
   height: 15rem;
-  border: 5px solid green;
+  padding: 3rem 2rem 0 2rem;
+  text-align: center;
+}
+
+.project-preamble h2 {
+  font-size: 20px;
+  color: #353535;
+  font-family: "Playfair Display", serif;
+}
+.project-preamble a {
+  color: #73877b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.project-preamble a:hover {
+  color: #bdd2a6;
+  animation: underline 0.5s ease;
+  text-decoration: underline;
+}
+
+@keyframes underline {
+  0% {
+    text-decoration-color: transparent;
+  }
+  100% {
+    text-decoration-color: #bdd2a6;
+  }
 }
