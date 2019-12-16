@@ -28,3 +28,18 @@
     height: 20rem;
   }
 }
+
+/**
+|--------------------------------------------------
+| Mid page
+|--------------------------------------------------
+*/
+
+.project-preamble {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 15rem;
+  border: 5px solid green;
+}
