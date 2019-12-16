@@ -36,6 +36,7 @@
 */
 
 .project-preamble {
+  opacity: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -43,6 +44,7 @@
   height: 15rem;
   padding: 3rem 2rem 0 2rem;
   text-align: center;
+  animation: fade-in 0.8s ease forwards 0.4s;
 }
 
 .project-preamble h2 {
@@ -69,3 +71,46 @@
     text-decoration-color: #bdd2a6;
   }
 }
+
+@keyframes fade-in {
+  0% {
+    padding: 15rem 2rem 0 2rem;
+    opacity: 0;
+  }
+  100% {
+    padding: 3rem 2rem 0 2rem;
+    opacity: 1;
+  }
+}
+
+/**
+|--------------------------------------------------
+| Mid page
+|--------------------------------------------------
+*/
+
+/**
+|--------------------------------------------------
+| Projects
+|--------------------------------------------------
+*/
+
+.projects-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid blue;
+  height: 30rem;
+}
+.placeholder-project {
+  border: 2px solid red;
+  height: 20rem;
+  width: 50rem;
+  margin-top: 5rem;
+}
+
+/**
+|--------------------------------------------------
+| Projects
+|--------------------------------------------------
+*/
