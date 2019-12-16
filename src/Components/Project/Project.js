@@ -9,7 +9,8 @@ const Project = props => {
     <div className="project-body-wrapper">
       <div className="title-wrapper">
         <span></span>
-        <a href="/">{header}</a> <span></span>
+        {header}
+        <span></span>
       </div>
       <div
         className="project-image-container"

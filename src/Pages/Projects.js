@@ -3,6 +3,7 @@ import React from "react";
 import "./Projects.css";
 import Project from "../Components/Project/Project";
 import placeholder from "../Assets/cotripper-ph.png";
+import delicious from "../Assets/delicious.jpg";
 
 function Projects() {
   return (
@@ -15,8 +16,8 @@ function Projects() {
       <div className="project-preamble">
         <span></span>
         <h2>
-          Here's a few of my most recent projects. For a closer look be sure to
-          check out my <a href="/">GitHub</a>.
+          Here's a few of my most recent projects. For a closer look and to see
+          more of my work be sure to check out my <a href="/">GitHub</a>.
         </h2>
         <span></span>
       </div>
@@ -25,16 +26,52 @@ function Projects() {
         <div className="placeholder-project">
           <Project picture={placeholder}>
             <h1>CoTripper</h1>
-            <h2>Hello</h2>
+            <h2>
+              As part of a team of 25 other developers, I helped create a
+              prototype for CoTripper, an application for mothers to get
+              together and plan trips for themselves and their kids. I learned
+              so much from this project, and I loved working with a team.
+            </h2>
           </Project>
         </div>
         <span></span>
       </div>
+
       <div className="projects-body">
         <span></span>
         <div className="placeholder-project">
-          <Project picture={placeholder}>
-            <h1>CoTripper</h1>
+          <Project picture={delicious}>
+            <h1>DeliCious</h1>
+            <h2>
+              Built with React, MongoDB, and Express; DeliCious is a web
+              application for finding the best restaurants in the Washington,
+              D.C. area. Users can search through the 100 best restaurants in DC
+              and leave reviews for their favorites. {""}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://wizardly-bartik-6c114a.netlify.com/"
+              >
+                Check out the site here!
+              </a>{" "}
+              {""} And feel free to look through the{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/tully4school/Project8FE"
+              >
+                front-end
+              </a>{" "}
+              and{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/TylerEikenberg/Yelp-DC-Database"
+              >
+                back-end
+              </a>{" "}
+              repos on GitHub.
+            </h2>
           </Project>
         </div>
         <span></span>

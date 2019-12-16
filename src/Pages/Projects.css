@@ -1,5 +1,5 @@
 .project-page-wrapper {
-  height: 2000px;
+  height: 200vh;
   width: 100vw;
   background-color: #e7eef6;
 }
@@ -104,6 +104,7 @@
   flex-wrap: wrap;
   opacity: 0;
   animation: fade-in 0.8s ease forwards 1s;
+  margin-bottom: 10rem;
 }
 .placeholder-project {
   /* border: 2px solid red; */
