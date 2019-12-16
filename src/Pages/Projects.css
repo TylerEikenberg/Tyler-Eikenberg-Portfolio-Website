@@ -1,7 +1,15 @@
 .project-page-wrapper {
-  height: 200vh;
+  height: 240vh;
   width: 100vw;
   background-color: #e7eef6;
+}
+@media only screen and (max-width: 620px) {
+  .project-page-wrapper {
+    height: 320vh;
+  }
+  .projects-footer {
+    margin-top: 15rem;
+  }
 }
 
 .project-page-header {
@@ -116,3 +124,24 @@
 | Projects
 |--------------------------------------------------
 */
+
+.projects-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10rem;
+  background-color: #353535;
+}
+.projects-footer a {
+  font-family: "Playfair Display", serif;
+  color: #e7eef6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 18px;
+}
+.projects-footer a:hover {
+  color: #ffffff;
+  animation: underline 0.5s ease;
+  text-decoration: underline;
+}

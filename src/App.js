@@ -56,7 +56,13 @@ const Home = () => (
         <div className="page-links-wrapper">
           <a href="/about">About</a>
           <a href="/projects">Projects</a>
-          <a href="/resume">Resume</a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://docs.google.com/document/d/1GHKkXBiTof8mh5EFVV26xopONd8HieW4HYavqMud8Ng/edit?usp=sharing"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </div>

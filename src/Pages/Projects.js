@@ -117,6 +117,13 @@ function Projects() {
         </div>
         <span></span>
       </div>
+      <div className="projects-footer">
+        <span></span>
+        <a href="/">home</a>
+        <a href="/About">about</a>
+        <a href="mailto:tylereikenberg8195@gmail.com">contact</a>
+        <span></span>
+      </div>
     </div>
   );
 }
