@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Projects from "./Pages/Projects";
+import About from "./Pages/About";
 import Tyler from "./Components/Tyler/Tyler";
 import { mdiGithubBox, mdiLinkedinBox, mdiEmailPlus } from "@mdi/js";
 import Icon from "@mdi/react";
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/projects" exact component={Projects} />
+          <Route path="/about" exact component={About} />
         </Switch>
       </div>
     </Router>

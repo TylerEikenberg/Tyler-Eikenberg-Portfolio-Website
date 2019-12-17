@@ -1,14 +1,30 @@
 .project-page-wrapper {
-  height: 240vh;
+  height: 250vh;
   width: 100vw;
   background-color: #e7eef6;
 }
 @media only screen and (max-width: 620px) {
   .project-page-wrapper {
-    height: 320vh;
+    height: 350vh;
   }
   .projects-footer {
     margin-top: 15rem;
+    padding-bottom: 20rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .project-page-wrapper {
+    height: 350vh;
+  }
+  @media only screen and (max-width: 375px) {
+    .project-page-wrapper {
+      height: 400vh;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .project-page-wrapper {
+      height: 450vh;
+    }
   }
 }
 
@@ -25,7 +41,7 @@
 .project-page-header h1 {
   color: #e7eef6;
   font-size: 72px;
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 @keyframes fall-down {

@@ -29,10 +29,10 @@
 }
 
 .project-image-container {
-  /* border: 2px solid red; */
   height: 20rem;
   background-size: cover;
   background-repeat: none;
+  clip-path: polygon(50% 0%, 100% 0, 100% 90%, 86% 100%, 0 100%, 0 0);
 }
 
 .content-wrapper {
