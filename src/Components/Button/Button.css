@@ -1,0 +1,16 @@
+.button-wrapper {
+  width: 15vw;
+  background-color: #121d3f;
+  text-align: center;
+  transition: transform 0.5s;
+}
+.button-wrapper:hover {
+  transform: scale(1.1);
+}
+.button-wrapper h1 {
+  padding: 1vh 0 3vh;
+  color: #edbbb4;
+}
+.button-wrapper h1:hover {
+  color: #e64a36;
+}
