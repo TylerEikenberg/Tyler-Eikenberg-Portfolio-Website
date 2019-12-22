@@ -60,3 +60,31 @@
   transform: scale(1.1);
   filter: contrast(200%);
 }
+
+/**
+ * details box
+ */
+.details-box {
+  opacity: 0;
+  color: #131515;
+  width: 45vw;
+  margin: 2vh 1vw 0 1vw;
+  animation: fade-in 0.5s ease-in forwards 5.8s;
+}
+@keyframes fade-in {
+  0% {
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.details-underline {
+  width: 10vw;
+  border-bottom: #131515;
+}
+
+@media screen and (max-width: 800px) {
+  .details-box {
+    width: 90vw;
+  }
+}

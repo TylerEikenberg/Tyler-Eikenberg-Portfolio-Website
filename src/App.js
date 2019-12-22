@@ -52,6 +52,14 @@ const Home = () => (
         </a>
       </div>
     </div>
+
+    <div className="details-box">
+      <h1>
+        I'm a software engineer / web developer from Baltimore, Maryland. I love
+        building web apps and typing really fast.
+      </h1>
+      <div className="details-underline"></div>
+    </div>
   </div>
 );
 

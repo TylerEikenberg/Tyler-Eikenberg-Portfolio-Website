@@ -6,7 +6,7 @@ function Tyler() {
   return (
     <svg
       id="logo"
-      width="300"
+      width="250"
       height="38"
       viewBox="0 0 433 38"
       fill="none"
