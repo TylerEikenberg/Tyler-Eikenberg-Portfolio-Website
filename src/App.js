@@ -22,55 +22,36 @@ function App() {
 }
 
 const Home = () => (
-  <div className="wrapper">
-    <div className="left-div">
-      <div className="name-wrapper"></div>
-      <div className="subname-container">
-        <Tyler />
-        <h3>Software Engineer</h3>
-        <div className="nav-links">
-          <ul>
-            <li className="icon-link">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/TylerEikenberg"
-              >
-                <Icon path={mdiGithubBox} size={3} color="#4F759B" />
-              </a>
-            </li>
-            <li className="icon-link">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/tylereikenberg/"
-              >
-                <Icon path={mdiLinkedinBox} size={3} color="#4F759B" />
-              </a>
-            </li>
-            <li className="icon-link">
-              <a href="mailto:tylereikenberg8195@gmail.com">
-                <Icon path={mdiEmailPlus} size={3} color="#4F759B" />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="page-links-wrapper">
-          <a href="/about">About</a>
-          <a href="/projects">Projects</a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://docs.google.com/document/d/1GHKkXBiTof8mh5EFVV26xopONd8HieW4HYavqMud8Ng/edit?usp=sharing"
-          >
-            Resume
-          </a>
-        </div>
+  <div className="HomePage-wrapper">
+    <div className="name-wrapper">
+      <Tyler />
+      <div className="home-icons">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="icon-link"
+          href="https://github.com/TylerEikenberg"
+        >
+          <Icon className="icon" path={mdiGithubBox} size={2} color="#F3F6FA" />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="icon-link"
+          href="https://www.linkedin.com/in/tylereikenberg/"
+        >
+          <Icon
+            className="icon"
+            path={mdiLinkedinBox}
+            size={2}
+            color="#F3F6FA"
+          />
+        </a>
+        <a className="icon-link" href="mailto:tylereikenberg8195@gmail.com">
+          <Icon className="icon" path={mdiEmailPlus} size={2} color="#F3F6FA" />
+        </a>
       </div>
     </div>
-    <div className="name-title-container"></div>
-
-    <div className="right-div"></div>
   </div>
 );
 

@@ -4,220 +4,59 @@
   padding: 0px;
 }
 
-/**
-|--------------------------------------------------
-| For sliding colored boxes
-|--------------------------------------------------
-*/
-.wrapper {
-  display: flex;
-  flex-direction: row;
+.HomePage-wrapper {
   width: 100%;
+  max-width: 100vw;
   height: 100vh;
-  position: relative;
+  background-color: #f3f6fa;
 }
-
-.left-div {
-  margin: 0;
-  width: 50vw;
-  height: 100vh;
-  background-color: #e7eef6;
-  animation: slide-down 1s ease-out;
-}
-.right-div {
+.name-wrapper {
   display: flex;
-  flex-direction: column;
-  margin: 0;
-  width: 50vw;
+  justify-content: center;
+  width: 100vw;
   height: 100vh;
-  background-color: #e7eef6;
-  animation: slide-up 1s ease-out;
+  background-color: #131515;
+  padding-top: 40vh;
+  animation: slide-up 1s ease-in-out forwards 5s;
+  -webkit-box-shadow: 0px 7px 11px -2px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 7px 11px -2px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 7px 11px -2px rgba(0, 0, 0, 0.13);
 }
 
-@keyframes slide-down {
-  0% {
-    -webkit-transform: translateY(-150%);
-  }
-  100% {
-    t-webkit-transform: translateY(0%);
-  }
-}
 @keyframes slide-up {
   0% {
-    -webkit-transform: translateY(150%);
+    height: 100vh;
+    padding-top: 40vh;
   }
   100% {
-    -webkit-transform: translateY(0%);
-  }
-}
-/**
-|--------------------------------------------------
-| For sliding colored boxes
-|--------------------------------------------------
-*/
-
-/**
-|--------------------------------------------------
-| For fade in animation
-|--------------------------------------------------
-*/
-
-@keyframes fade-in {
-  0% {
-    top: 10%;
-    opacity: 0;
-  }
-  100% {
-    top: 30%;
-    opacity: 1;
+    height: 10vh;
+    padding-top: 3vh;
   }
 }
 
-/**
-|--------------------------------------------------
-| For fade in animation
-|--------------------------------------------------
-*/
-/**
-|--------------------------------------------------
-| For subtitle name animation
-|--------------------------------------------------
-*/
-.name-wrapper {
-  padding: 0;
-}
-.subname-container {
-  width: 20rem;
-  height: 40rem;
-  margin: 14rem 0rem 0rem 9rem;
-}
-@media only screen and (max-width: 620px) {
-  .subname-container {
-    margin: 13rem 0rem 0rem 4rem;
-  }
-}
-
-.subname-container h3 {
+.home-icons {
   opacity: 0;
-  color: #4f759b;
-  font-size: 26px;
-  font-family: "Playfair Display", serif;
-  animation: type 2.5s steps(20) forwards;
-  animation-delay: 3s;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 4px solid black;
-  width: 18ch;
-  /* border: 2px solid black; */
-  padding-left: 0.8rem;
-}
-@keyframes type {
-  0% {
-    opacity: 1;
-    width: 0ch;
-  }
-  100% {
-    opacity: 1;
-    width: 18ch;
-    border-right: 4px solid rgba(0, 0, 0, 0);
-  }
-}
-/**
-|--------------------------------------------------
-| For subtitle name animation
-|--------------------------------------------------
-*/
-/**
-|--------------------------------------------------
-| For nav links
-|--------------------------------------------------
-*/
-.nav-links {
-  opacity: 0;
-  margin: 0rem 0rem 0rem 0rem;
-  width: 15rem;
-  -webkit-animation: fade-in 1.1s forwards; /* Safari 4.0 - 8.0 */
-  -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
-  animation: fade-in 1.1s forwards;
-  animation-delay: 4s;
-  /* border: 2px solid black; */
-}
-.nav-links ul {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
+  flex-direction: row-reverse;
+  width: 0rem;
+  margin-left: 1vw;
+  margin-top: -5px;
+  animation: open 0.5s ease-in forwards 5.5s;
 }
-@media only screen and (max-width: 620px) {
-  .nav-links {
-    margin: 0rem 0rem 0rem 1rem;
+@keyframes open {
+  0% {
+    width: 0rem;
+  }
+  100% {
+    width: 10rem;
+    opacity: 1;
   }
 }
 
-.icon-link {
+.icon {
   transition: transform 0.3s;
 }
-.icon-link:hover {
+.icon:hover {
   transform: scale(1.1);
+  filter: contrast(200%);
 }
-
-/**
-|--------------------------------------------------
-| For Page Links
-|--------------------------------------------------
-*/
-.page-links-wrapper {
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  /* border: 2px solid black; */
-  width: 40rem;
-  height: 30rem;
-  margin: 0rem 0rem 0rem -12rem;
-  -webkit-animation: fade-in 1.1s forwards; /* Safari 4.0 - 8.0 */
-  -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
-  animation: fade-in 1.1s forwards;
-  animation-delay: 4s;
-}
-@media only screen and (max-width: 620px) {
-  .page-links-wrapper {
-    z-index: 10;
-    margin: 5rem 0rem 0rem 4rem;
-    width: 8rem;
-    height: 10rem;
-  }
-  .page-links-wrapper a {
-    transform: scale(0.5);
-  }
-}
-
-.page-links-wrapper a {
-  color: #4f759b;
-  font-family: "Playfair Display", serif;
-  font-size: 72px;
-  text-decoration: none;
-}
-.page-links-wrapper a:hover {
-  color: #375471;
-  font-family: "Playfair Display", serif;
-  font-size: 72px;
-  animation: underline 0.5s ease forwards;
-  text-decoration: underline;
-}
-
-@keyframes underline {
-  0% {
-    text-decoration-color: transparent;
-  }
-  100% {
-    text-decoration-color: #375471;
-  }
-}
-
-/**
-|--------------------------------------------------
-| For Page Links
-|--------------------------------------------------
-*/
