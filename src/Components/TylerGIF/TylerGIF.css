@@ -1,0 +1,17 @@
+.tylergif-wrapper {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #78e3fd;
+  border-radius: 50%;
+  background-image: url("../../Assets/tyler-typing.GIF");
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+  .tylergif-wrapper {
+    background-size: 150%;
+    background-position-x: 40%;
+    background-position-y: 20%;
+  }
+}

@@ -14,3 +14,9 @@
 .button-wrapper h1:hover {
   color: #e64a36;
 }
+
+@media screen and (max-width: 800px) {
+  .button-wrapper {
+    width: 35vw;
+  }
+}

@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import Projects from "./Pages/Projects";
 import About from "./Pages/About";
-import Tyler from "./Components/Tyler/Tyler";
 import { mdiGithubBox, mdiLinkedinBox, mdiEmailPlus } from "@mdi/js";
 import Icon from "@mdi/react";
 
+import Tyler from "./Components/Tyler/Tyler";
 import Button from "./Components/Button/Button";
+import TylerGif from "./Components/TylerGIF/TylerGIF";
 
 function App() {
   return (
@@ -26,7 +27,13 @@ function App() {
 const Home = () => (
   <div className="HomePage-wrapper">
     <div className="name-wrapper">
-      <Tyler />
+      <div className="tyler-wrapper">
+        <Tyler />
+      </div>
+      <div className="gif-container">
+        <TylerGif />
+      </div>
+
       <div className="home-icons">
         <a
           target="_blank"
@@ -34,7 +41,7 @@ const Home = () => (
           className="icon-link"
           href="https://github.com/TylerEikenberg"
         >
-          <Icon className="icon" path={mdiGithubBox} size={2} color="#F3F6FA" />
+          <Icon className="icon" path={mdiGithubBox} size={3} color="#f3f6fa" />
         </a>
         <a
           target="_blank"
@@ -45,36 +52,41 @@ const Home = () => (
           <Icon
             className="icon"
             path={mdiLinkedinBox}
-            size={2}
-            color="#F3F6FA"
+            size={3}
+            color="#f3f6fa"
           />
         </a>
         <a className="icon-link" href="mailto:tylereikenberg8195@gmail.com">
-          <Icon className="icon" path={mdiEmailPlus} size={2} color="#F3F6FA" />
+          <Icon className="icon" path={mdiEmailPlus} size={3} color="#f3f6fa" />
         </a>
       </div>
     </div>
 
     <div className="details-box">
-      <h1>
-        I'm a <span> software engineer / web developer </span> from Baltimore,
-        Maryland. I love building web apps and typing really fast.
-      </h1>
-      <div className="link-container">
-        <div className="link-wrapper">
-          <Link to="/about">
-            <Button content="About" />
-          </Link>
-        </div>
-        <div className="link-wrapper">
-          <Link to="/projects">
-            <Button content="Projects" />
-          </Link>
-        </div>
-        <div className="link-wrapper">
-          <Link to="/resume">
-            <Button content="Résumé" />
-          </Link>
+      <div className="details-objects-container">
+        <div>
+          <h1>
+            I'm a <span> software engineer / web developer </span> from
+            Baltimore, Maryland. I love building web apps and typing really
+            fast.
+          </h1>
+          <div className="link-container">
+            <div className="link-wrapper">
+              <Link to="/about">
+                <Button content="About" />
+              </Link>
+            </div>
+            <div className="link-wrapper">
+              <Link to="/projects">
+                <Button content="Projects" />
+              </Link>
+            </div>
+            <div className="link-wrapper">
+              <Link to="/resume">
+                <Button content="Résumé" />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
