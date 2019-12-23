@@ -7,10 +7,7 @@ const Project = props => {
 
   return (
     <div className="project-body-wrapper">
-      <div className="project-header">
-        <span></span>
-        {header} <span></span>
-      </div>
+      <div className="project-header">{header}</div>
       <div
         className="project-picture"
         style={{ backgroundImage: `url(${picture})` }}

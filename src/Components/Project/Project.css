@@ -2,17 +2,19 @@
   width: 20vw;
   border: 3px solid #edbbb4;
   border-radius: 2%;
+  margin: 1vh 0 1vh 0;
 }
 
 .project-header {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  font-size: 0.8rem;
   background-color: #78e3fd;
+  padding: 2vh 0 2vh 0;
   font-family: "Merriweather", serif;
 }
 
 .project-picture {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   padding: 10vh 0 10vh 0;
   background-size: 70%;
   background-position-x: 50%;
@@ -21,7 +23,7 @@
 }
 .project-details {
   text-align: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding: 1vh 0 20vh 0;
 }
 

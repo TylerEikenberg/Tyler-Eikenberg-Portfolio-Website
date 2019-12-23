@@ -71,7 +71,7 @@ function Projects() {
 
       <div className="projects-container">
         <Project picture={glasses}>
-          <h1>hello</h1> This project is about glasses
+          <h1>Studio Ghibli Database</h1> This project is about glasses
         </Project>
         <Project picture={glasses}>
           <h1>hello</h1> This project is about glasses
