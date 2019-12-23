@@ -18,7 +18,7 @@
 .resume {
   background-image: url("../../Assets/resume.png");
   background-size: 85%;
-  background-position-y: -1vh;
+  background-position-y: -0.5vh;
   background-position-x: 1.5vw;
 }
 .button-wrapper:hover {
