@@ -1,14 +1,29 @@
 .button-wrapper {
-  width: 15vw;
-  background-color: #121d3f;
   text-align: center;
   transition: transform 0.5s;
+  padding-bottom: 5vh;
+  width: 15vw;
+
+  /* border: 1px solid black; */
+}
+.glasses {
+  background-image: url("../../Assets/myglasses.png");
+  background-size: cover;
+}
+.laptop {
+  background-image: url("../../Assets/laptopcode.png");
+  background-position-y: 0vh;
+  background-size: cover;
+}
+.resume {
+  background-image: url("../../Assets/resume.png");
+  background-size: cover;
 }
 .button-wrapper:hover {
   transform: scale(1.1);
 }
 .button-wrapper h1 {
-  padding: 1vh 0 3vh;
+  padding: 1vh 0 10vh;
   color: #edbbb4;
 }
 .button-wrapper h1:hover {
@@ -18,5 +33,9 @@
 @media screen and (max-width: 800px) {
   .button-wrapper {
     width: 35vw;
+  }
+  .button-wrapper h1 {
+    padding: 1vh 0 0vh 0;
+    color: #edbbb4;
   }
 }

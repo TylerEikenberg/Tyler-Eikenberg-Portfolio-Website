@@ -27,11 +27,9 @@ function App() {
 const Home = () => (
   <div className="HomePage-wrapper">
     <div className="name-wrapper">
+      <div className="greeting">Hi!</div>
       <div className="tyler-wrapper">
         <Tyler />
-      </div>
-      <div className="gif-container">
-        <TylerGif />
       </div>
 
       <div className="home-icons">
@@ -41,7 +39,7 @@ const Home = () => (
           className="icon-link"
           href="https://github.com/TylerEikenberg"
         >
-          <Icon className="icon" path={mdiGithubBox} size={3} color="#f3f6fa" />
+          <Icon className="icon" path={mdiGithubBox} size={3} color="#fff" />
         </a>
         <a
           target="_blank"
@@ -49,19 +47,19 @@ const Home = () => (
           className="icon-link"
           href="https://www.linkedin.com/in/tylereikenberg/"
         >
-          <Icon
-            className="icon"
-            path={mdiLinkedinBox}
-            size={3}
-            color="#f3f6fa"
-          />
+          <Icon className="icon" path={mdiLinkedinBox} size={3} color="#fff" />
         </a>
         <a className="icon-link" href="mailto:tylereikenberg8195@gmail.com">
-          <Icon className="icon" path={mdiEmailPlus} size={3} color="#f3f6fa" />
+          <Icon className="icon" path={mdiEmailPlus} size={3} color="#fff" />
         </a>
       </div>
     </div>
 
+    <div className="gif-container">
+      <span></span>
+      <TylerGif />
+      <span></span>
+    </div>
     <div className="details-box">
       <div className="details-objects-container">
         <div>
@@ -73,17 +71,17 @@ const Home = () => (
           <div className="link-container">
             <div className="link-wrapper">
               <Link to="/about">
-                <Button content="About" />
+                <Button image="glasses" content="About" />
               </Link>
             </div>
             <div className="link-wrapper">
               <Link to="/projects">
-                <Button content="Projects" />
+                <Button image="laptop" content="Projects" />
               </Link>
             </div>
             <div className="link-wrapper">
               <Link to="/resume">
-                <Button content="Résumé" />
+                <Button imag="resume" content="Résumé" />
               </Link>
             </div>
           </div>
