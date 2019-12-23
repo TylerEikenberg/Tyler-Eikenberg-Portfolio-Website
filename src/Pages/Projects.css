@@ -1,163 +1,74 @@
-.project-page-wrapper {
-  height: 250vh;
-  width: 100vw;
-  background-color: #e7eef6;
+.ProjectPage-wrapper {
+  width: 100%;
+  max-width: 100vw;
+  background-color: #fff;
 }
-@media only screen and (max-width: 620px) {
-  .project-page-wrapper {
-    height: 350vh;
-  }
-  .projects-footer {
-    margin-top: 15rem;
-    padding-bottom: 20rem;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .project-page-wrapper {
-    height: 350vh;
-  }
-  @media only screen and (max-width: 375px) {
-    .project-page-wrapper {
-      height: 400vh;
-    }
-  }
-  @media only screen and (max-width: 320px) {
-    .project-page-wrapper {
-      height: 450vh;
-    }
-  }
-}
-
-.project-page-header {
+.nav-bar {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100vw;
-  height: 1rem;
-  background-color: #353535;
-  font-family: "Pacifico", cursive;
-  animation: fall-down 1s forwards;
+  height: 15vh;
+  background-color: #78e3fd;
+  padding-top: 3vh;
 }
-.project-page-header h1 {
-  color: #e7eef6;
-  font-size: 72px;
-  margin-top: 6rem;
+.gif-container_projects {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -8vh;
+}
+.home-icons_projects {
+  z-index: 5;
+  display: flex;
+  margin: 0vh 0 0vh 30vw;
 }
 
-@keyframes fall-down {
-  0% {
-    height: 1rem;
-  }
-  100% {
-    height: 20rem;
-  }
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Merriweather", serif;
+  border: 2px solid black;
+  margin: 2vh 0 0 0;
+}
+.projects-header h1 {
+  font-size: 50px;
+  color: #edbbb4;
+}
+
+.projects-container {
+  margin: 2vh 0 0 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 /**
 |--------------------------------------------------
 | Mid page
 |--------------------------------------------------
-*/
-
-.project-preamble {
-  opacity: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100vw;
-  height: 15rem;
-  padding: 3rem 2rem 0 2rem;
-  text-align: center;
-  animation: fade-in 0.8s ease forwards 0.4s;
-}
-
-.project-preamble h2 {
-  font-size: 20px;
-  color: #353535;
-  font-family: "Playfair Display", serif;
-}
-.project-preamble a {
-  color: #73877b;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.project-preamble a:hover {
-  color: #bdd2a6;
-  animation: underline 0.5s ease;
-  text-decoration: underline;
-}
-
-@keyframes underline {
-  0% {
-    text-decoration-color: transparent;
-  }
-  100% {
-    text-decoration-color: #bdd2a6;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    padding: 15rem 2rem 0 2rem;
-    opacity: 0;
-  }
-  100% {
-    padding: 3rem 2rem 0 2rem;
-    opacity: 1;
-  }
-}
-
-/**
+*/ /**
 |--------------------------------------------------
 | Mid page
 |--------------------------------------------------
 */
 
-/**
-|--------------------------------------------------
-| Projects
-|--------------------------------------------------
-*/
+@media screen and (max-width: 425px) {
+  .tyler-wrapper {
+    padding-top: 1vh;
+    padding-bottom: 10vh;
+    margin: -5vh 0vw 0 0vw;
+    overflow-y: hidden;
+  }
 
-.projects-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* border: 2px solid blue; */
-  height: 30rem;
-  flex-wrap: wrap;
-  opacity: 0;
-  animation: fade-in 0.8s ease forwards 1s;
-  margin-bottom: 10rem;
+  .home-icons_projects {
+    display: none;
+  }
 }
-.placeholder-project {
-  /* border: 2px solid red; */
-  width: 50rem;
-}
-
-/**
-|--------------------------------------------------
-| Projects
-|--------------------------------------------------
-*/
-
-.projects-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100vw;
-  height: 10rem;
-  background-color: #353535;
-}
-.projects-footer a {
-  font-family: "Playfair Display", serif;
-  color: #e7eef6;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: 18px;
-}
-.projects-footer a:hover {
-  color: #ffffff;
-  animation: underline 0.5s ease;
-  text-decoration: underline;
+@media screen and (max-width: 1060px) {
+  .projects-container {
+    margin: 2vh 0vw 0 28vw;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    border: 2px solid green;
+  }
 }
