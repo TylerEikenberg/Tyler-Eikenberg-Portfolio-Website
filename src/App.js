@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import Projects from "./Pages/Projects";
 import About from "./Pages/About";
+import Resume from "./Pages/Resume";
 import { mdiGithubBox, mdiLinkedinBox, mdiEmailPlus } from "@mdi/js";
 import Icon from "@mdi/react";
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/projects" exact component={Projects} />
           <Route path="/about" exact component={About} />
+          <Route path="/resume" exact component={Resume} />
         </Switch>
       </div>
     </Router>
