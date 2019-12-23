@@ -52,7 +52,6 @@ a {
   background-color: #78e3fd;
   padding-top: 40vh;
   animation: slide-up 1s ease-in-out forwards 1.5s;
-  /* border: 2px solid green; */
 }
 
 @keyframes slide-up {
@@ -92,7 +91,7 @@ a {
   z-index: 5;
   opacity: 0;
   display: flex;
-  margin: 3vh 0 0vh 40vw;
+  margin: 0vh 0 0vh 30vw;
   animation: open 0.9s ease-in forwards 2.5s;
 }
 @keyframes open {
@@ -165,7 +164,7 @@ a {
   display: flex;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 425px) {
   .details-box {
     width: 90vw;
     margin: 0vh 1vw 0 1vw;
