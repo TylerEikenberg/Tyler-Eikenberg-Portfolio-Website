@@ -65,7 +65,7 @@
 }
 @media screen and (max-width: 1060px) {
   .projects-container {
-    margin: 2vh 0vw 0 28vw;
+    margin: 2vh 0vw 0 20vw;
     display: flex;
     flex-direction: column;
   }
