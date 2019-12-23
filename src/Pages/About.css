@@ -7,7 +7,7 @@
   animation: fade-in 0.8s ease-in forwards;
 }
 .photo-container {
-  width: 14vw;
+  width: 20rem;
   padding: 5vh 0 20vh 0;
   /* border: 2px solid blue; */
   background-image: url("../Assets/megoofin.jpg");
