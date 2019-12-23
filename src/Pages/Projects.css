@@ -27,8 +27,8 @@
   display: flex;
   justify-content: space-between;
   font-family: "Merriweather", serif;
-  /* border: 2px solid black; */
   margin: 2vh 0 0 0;
+  animation: fade-in 0.8s ease-in forwards;
 }
 .projects-header h1 {
   font-size: 50px;
@@ -39,8 +39,29 @@
   margin: 5vh 0 0 0;
   display: flex;
   justify-content: space-around;
+  animation: fade-in 0.8s ease-in forwards;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.more-work-link {
+  display: flex;
+  justify-content: space-between;
+}
+.more-work-link a {
+  color: #2c869d;
+  font-family: "Merriweather", serif;
+}
+.more-work-link a:hover {
+  color: #194b57;
+}
 /**
 |--------------------------------------------------
 | Mid page
@@ -61,6 +82,9 @@
 
   .home-icons_projects {
     display: none;
+  }
+  .more-work-link {
+    padding: 0 0 10vh 0;
   }
 }
 @media screen and (max-width: 1060px) {

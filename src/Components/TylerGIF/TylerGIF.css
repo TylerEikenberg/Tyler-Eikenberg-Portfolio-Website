@@ -1,5 +1,9 @@
-.tylergif-wrapper {
+.tyler-gif-home {
   z-index: 5;
+}
+
+.tylergif-wrapper {
+  z-index: 10;
   width: 150px;
   height: 150px;
   border: 5px solid #78e3fd;
@@ -7,6 +11,9 @@
   background-image: url("../../Assets/tyler-typing.GIF");
   background-size: 120%;
   background-repeat: no-repeat;
+}
+.tylergif-wrapper:hover {
+  border-color: #51b6d0;
 }
 
 @media screen and (max-width: 800px) {

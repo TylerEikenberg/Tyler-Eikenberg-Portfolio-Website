@@ -162,25 +162,30 @@ a {
 
 .details-objects-container {
   display: flex;
+  /* margin: 0 10vw 0 1vw; */
 }
 
 @media screen and (max-width: 425px) {
   .details-box {
     width: 90vw;
-    margin: 0vh 1vw 0 1vw;
     font-size: 12px;
   }
   .link-container {
     flex-direction: column;
+    margin: 0vh 2vw 0 2vw;
   }
   .link-wrapper {
-    padding-left: 20vw;
+    padding-left: 23vw;
   }
   .tyler-wrapper {
     padding-top: 1vh;
     padding-bottom: 10vh;
     margin: -5vh 0vw 0 0vw;
     overflow-y: hidden;
+  }
+  .details-objects-container {
+    display: flex;
+    margin: 0 10vw 0 1vw;
   }
 
   .home-icons {

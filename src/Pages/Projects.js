@@ -102,8 +102,9 @@ function Projects() {
           </a>
           Working with a group of 2 other developers, we created an API that
           gathered data from 100 of the best restaurants in Washington, DC, then
-          we created a front-end website for viewing these restaurants that
-          allows users to leave reviews.
+          we created a front-end website for viewing these restaurants with
+          React. The website allows users to search through 100 different
+          restaurants and leave their own reviews.
         </Project>
         <Project
           picture={glasses}
@@ -122,6 +123,19 @@ function Projects() {
           play as Commander Pup and must prevent the alien forces from reaching
           your home planet.
         </Project>
+      </div>
+
+      <div className="more-work-link">
+        <div></div>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="icon-link"
+          href="https://github.com/TylerEikenberg"
+        >
+          View more of my work on my GitHub!
+        </a>
+        <div></div>
       </div>
     </div>
   );
