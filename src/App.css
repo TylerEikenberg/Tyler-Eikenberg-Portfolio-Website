@@ -32,7 +32,6 @@ a {
   display: flex;
   justify-content: space-between;
   transform: scale(0.1);
-  /* border: 2px solid black; */
   margin-top: -8vh;
   animation: scale 1s ease-in-out forwards 1.5s;
 }
@@ -90,6 +89,7 @@ a {
 }
 
 .home-icons {
+  z-index: 5;
   opacity: 0;
   display: flex;
   margin: 3vh 0 0vh 40vw;
@@ -147,7 +147,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 3vh 0 0 0;
+  margin: 3vh 0 0 3vw;
   padding: 1vh 0 1vh 0;
   /* border: 2px solid black; */
 }

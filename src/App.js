@@ -81,7 +81,7 @@ const Home = () => (
             </div>
             <div className="link-wrapper">
               <Link to="/resume">
-                <Button imag="resume" content="Résumé" />
+                <Button image="resume" content="Résumé" />
               </Link>
             </div>
           </div>
