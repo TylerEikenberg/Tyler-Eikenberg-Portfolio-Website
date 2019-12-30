@@ -54,6 +54,7 @@
 .more-work-link {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5vh;
 }
 .more-work-link a {
   color: #2c869d;
