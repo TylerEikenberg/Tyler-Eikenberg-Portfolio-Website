@@ -10,7 +10,7 @@ const Project = props => {
 
   return (
     <div className="project-body-wrapper">
-      <div className="project-header">{header}</div>
+      {/* <div className="project-header">{header}</div> */}
       <div
         className="project-picture"
         style={{ backgroundImage: `url(${picture})` }}
@@ -26,7 +26,7 @@ const Project = props => {
           className="icon-link"
           href={github}
         >
-          <Icon className="icon" path={mdiGithubBox} size={3} color="#78e3fd" />
+          <Icon className="icon" path={mdiGithubBox} size={3} color="#edbbb4" />
         </a>
         <div></div>
       </div>
