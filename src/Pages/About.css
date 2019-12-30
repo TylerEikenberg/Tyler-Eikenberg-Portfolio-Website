@@ -3,9 +3,18 @@
   justify-content: space-between;
   /* border: 2px solid green; */
   width: 100vw;
-  margin-top: 2vh;
   animation: fade-in 0.8s ease-in forwards;
 }
+
+@keyframes slide-up {
+  0% {
+    margin-top: 20vh;
+  }
+  100% {
+    margin-top: 2vh;
+  }
+}
+
 .photo-container {
   width: 20rem;
   padding: 5rem 0 15rem 0;
@@ -15,6 +24,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 10vw 0 0;
+  animation: slide-up 0.5s ease-in forwards;
 }
 .photo-container::after {
   z-index: -1;
@@ -27,11 +37,13 @@
 }
 
 .about-me-details {
-  /* border: 2px solid yellow; */
+  padding: 5vh;
+  background-color: #edbbb4;
   width: 40vw;
   font-family: "Merriweather", serif;
   line-height: 2em;
   color: #131515;
+  animation: slide-up 0.7s ease-in forwards;
 }
 .top-details {
   padding-bottom: 2vh;

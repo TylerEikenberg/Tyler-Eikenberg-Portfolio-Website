@@ -147,10 +147,13 @@ a {
   color: #131515;
   font-family: "Merriweather", serif;
 }
-
 .details-box span {
   color: #edbbb4;
   text-decoration: underline;
+}
+
+.details-quick-about {
+  text-align: center;
 }
 .link-container {
   width: 80vw;

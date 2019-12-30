@@ -65,7 +65,7 @@ const Home = () => (
     <div className="details-box">
       <div className="details-objects-container">
         <div>
-          <h1>
+          <h1 className="details-quick-about">
             I'm a <span> software engineer / web developer </span> from
             Baltimore, Maryland. I love building web apps and typing really
             fast.
