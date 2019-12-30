@@ -1,6 +1,6 @@
 import React from "react";
 import "./TylerGIF.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const TylerGIF = props => {
   return (

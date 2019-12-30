@@ -1,6 +1,6 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import "./Projects.css";
+
 import TylerGif from "../Components/TylerGIF/TylerGIF";
 import Tyler from "../Components/Tyler/Tyler";
 import Project from "../Components/Project/Project";
@@ -8,7 +8,9 @@ import Project from "../Components/Project/Project";
 import { mdiGithubBox, mdiLinkedinBox, mdiEmailPlus } from "@mdi/js";
 import Icon from "@mdi/react";
 
-import glasses from "../Assets/myglasses.png";
+import totoro from "../Assets/totoro.png";
+import burger from "../Assets/burger.png";
+import dog from "../Assets/gdawg.png";
 
 function Projects() {
   return (
@@ -71,7 +73,7 @@ function Projects() {
 
       <div className="projects-container">
         <Project
-          picture={glasses}
+          picture={totoro}
           github="https://github.com/TylerEikenberg/Studio-Ghibli-Project-Repos"
         >
           <a
@@ -89,7 +91,7 @@ function Projects() {
           Studio Ghibli.
         </Project>
         <Project
-          picture={glasses}
+          picture={burger}
           github="https://github.com/TylerEikenberg/DeliCious-Repositorys"
         >
           <a
@@ -107,7 +109,7 @@ function Projects() {
           restaurants and leave their own reviews.
         </Project>
         <Project
-          picture={glasses}
+          picture={dog}
           github="https://github.com/TylerEikenberg/Galaxy-Dawg"
         >
           <a

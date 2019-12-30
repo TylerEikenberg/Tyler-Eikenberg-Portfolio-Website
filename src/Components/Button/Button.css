@@ -2,10 +2,9 @@
   text-align: center;
   transition: transform 0.5s;
   padding-bottom: 10vh;
-  width: 20vw;
+  width: 18rem;
   background-repeat: no-repeat;
   background-size: cover;
-  /* border: 1px solid black; */
 }
 .glasses {
   background-image: url("../../Assets/myglasses.png");
@@ -18,7 +17,7 @@
 .resume {
   background-image: url("../../Assets/resume.png");
   background-size: 85%;
-  background-position-y: -0.5vh;
+  background-position-y: 0vh;
   background-position-x: 1.5vw;
 }
 .button-wrapper:hover {

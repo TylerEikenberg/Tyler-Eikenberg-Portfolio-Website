@@ -27,7 +27,7 @@
   display: flex;
   justify-content: space-between;
   font-family: "Merriweather", serif;
-  margin: 2vh 0 0 0;
+  margin: 5vh 0 0 0;
   animation: fade-in 0.8s ease-in forwards;
 }
 .projects-header h1 {
