@@ -8,12 +8,21 @@
 }
 .photo-container {
   width: 20rem;
-  padding: 5vh 0 20vh 0;
+  padding: 5rem 0 15rem 0;
   /* border: 2px solid blue; */
   background-image: url("../Assets/megoofin.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 10vw 0 0;
+}
+.photo-container::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 20rem;
+  padding: 5rem 0 13.5rem 0;
+  margin-left: 3rem;
+  background-color: #78e3fd;
 }
 
 .about-me-details {
@@ -33,7 +42,7 @@
 @media screen and (max-width: 425px) {
   .about-me-details {
     width: 90vw;
-    margin: 2vh;
+    margin: auto;
     text-align: center;
   }
 
@@ -43,9 +52,20 @@
   }
 
   .photo-container {
-    width: 50vw;
-    margin: 1vh 0 1vh 25vw;
+    background-size: 90%;
+    width: 16rem;
+    margin: auto;
   }
+  .photo-container::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 14rem;
+    padding: 5rem 0 8rem 0;
+    margin-left: 3rem;
+    background-color: #78e3fd;
+  }
+
   .gif-container_projects {
     transform: scale(1);
   }
