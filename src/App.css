@@ -43,7 +43,7 @@ a {
   justify-content: space-between;
   transform: scale(0);
   margin-top: -8vh;
-  animation: scale 1s ease-in-out forwards 1.5s;
+  animation: scale 1s ease-in-out forwards 0.2s;
 }
 @keyframes scale {
   0% {
