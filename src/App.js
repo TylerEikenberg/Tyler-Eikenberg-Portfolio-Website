@@ -29,7 +29,6 @@ function App() {
 const Home = () => (
   <div className="HomePage-wrapper">
     <div className="name-wrapper">
-      <div className="greeting">Hi!</div>
       <div className="tyler-wrapper">
         <Tyler />
       </div>
