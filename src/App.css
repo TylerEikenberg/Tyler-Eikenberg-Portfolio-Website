@@ -165,6 +165,9 @@ a {
     width: 90vw;
     font-size: 12px;
   }
+  .gif-container {
+    margin-top: -10vh;
+  }
   .link-container {
     flex-direction: column;
     margin: 0vh 2vw 0 2vw;
