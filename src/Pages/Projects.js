@@ -76,12 +76,13 @@ function Projects() {
           <Project
             picture={totoro}
             github="https://github.com/TylerEikenberg/Studio-Ghibli-Project-Repos"
+            deployed="https://studio-ghibli-movie-database.netlify.com/"
           >
             <a
               target="_blank"
               rel="noopener noreferrer"
               className="icon-link"
-              href="https://dazzling-meninsky-24845a.netlify.com/"
+              href="https://studio-ghibli-movie-database.netlify.com/"
             >
               Studio Ghibli Database
             </a>
@@ -94,6 +95,7 @@ function Projects() {
           <Project
             picture={burger}
             github="https://github.com/TylerEikenberg/DeliCious-Repositorys"
+            deployed="https://wizardly-bartik-6c114a.netlify.com/"
           >
             <a
               target="_blank"
@@ -112,6 +114,7 @@ function Projects() {
           <Project
             picture={dog}
             github="https://github.com/TylerEikenberg/Galaxy-Dawg"
+            deployed="https://tylereikenberg.github.io/Galaxy-Dawg/"
           >
             <a
               target="_blank"

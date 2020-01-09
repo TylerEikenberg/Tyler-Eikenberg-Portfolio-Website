@@ -1,7 +1,7 @@
 .project-body-wrapper {
   width: 20rem;
-
   margin: 1vh 0 1vh 0;
+  /* border: 2px solid; */
 }
 
 .project-header {
@@ -10,14 +10,14 @@
   padding: 2vh 0 2vh 0;
 }
 .project-header a {
-  color: #4e94a5;
+  color: #4f759b;
   font-size: 1.2rem;
   font-family: "Merriweather", serif;
   transition: font-size 0.3s;
   text-decoration: underline;
 }
 .project-header a:hover {
-  color: #4fb9d3;
+  color: #c7edf7;
   font-size: 1.23rem;
 }
 
@@ -53,16 +53,17 @@
 }
 .project-details {
   text-align: center;
-  /* border: 2px solid red; */
+  background-color: #edbbb4;
   padding: 1vh 1vw 0vh 1vw;
   font-family: "Merriweather", serif;
   font-size: 14px;
 }
 
-.github-container {
-  padding: 1vh 1vw 1vh 1vw;
+.Project-icon-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #edbbb4;
 }
 
 @media screen and (max-width: 425px) {
@@ -82,5 +83,26 @@
   }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (min-width: 1024px) {
+  .project-body-wrapper {
+    width: 50vw;
+    margin: 1vh 0 1vh 0;
+    /* border: 2px solid; */
+  }
+  .project-picture {
+    width: 50vw;
+    background-size: 40%;
+  }
+  .github-container {
+    /* border: 2px solid black; */
+    padding: 1vh 1vw 1vh 1vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Project-icon {
+    transition: transform 0.3s;
+  }
+  .Project-icon:hover {
+    transform: scale(1.05);
+  }
 }

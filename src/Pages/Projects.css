@@ -36,8 +36,12 @@
 }
 
 .projects-container {
-  margin: 5vh 0 0 0;
+  /* border: 2px solid black; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   animation: fade-in 0.8s ease-in forwards;
 }

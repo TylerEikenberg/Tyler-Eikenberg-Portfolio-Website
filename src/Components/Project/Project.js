@@ -1,11 +1,11 @@
 import React from "react";
 import "./Project.css";
 
-import { mdiGithubBox } from "@mdi/js";
+import { mdiGithubBox, mdiWeb } from "@mdi/js";
 import Icon from "@mdi/react";
 
 const Project = props => {
-  let { picture, github } = props;
+  let { picture, github, deployed } = props;
   let [header, body] = [props.children[0], props.children[1]];
 
   return (
@@ -18,7 +18,7 @@ const Project = props => {
 
       <div className="project-details">{body}</div>
 
-      <div className="github-container">
+      <div className="Project-icon-container">
         <div></div>
         <a
           target="_blank"
@@ -26,7 +26,25 @@ const Project = props => {
           className="icon-link"
           href={github}
         >
-          <Icon className="icon" path={mdiGithubBox} size={3} color="#edbbb4" />
+          <Icon
+            className="Project-icon"
+            path={mdiGithubBox}
+            size={3}
+            color="#4F759B"
+          />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="icon-link"
+          href={deployed}
+        >
+          <Icon
+            className="Project-icon"
+            path={mdiWeb}
+            size={3}
+            color="#4F759B"
+          />
         </a>
         <div></div>
       </div>
