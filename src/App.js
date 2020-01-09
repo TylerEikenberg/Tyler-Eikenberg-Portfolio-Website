@@ -32,7 +32,7 @@ const Home = () => (
       <div className="App-tyler-name-wrapper">
         <Tyler />
       </div>
-      <div className="gif-container">
+      <div className="App-gif-container">
         <TylerGif />
       </div>
 
@@ -59,31 +59,30 @@ const Home = () => (
       </div>
     </header>
 
-    <div className="details-box">
-      <div className="details-objects-container">
-        <div>
-          <h1 className="details-quick-about">
-            I'm a <span> software engineer / web developer </span> from
-            Baltimore, Maryland. I love building web apps and typing really
-            fast.
-          </h1>
-          <div className="link-container">
-            <div className="link-wrapper">
-              <Link to="/about">
-                <Button image="glasses" content="About" />
-              </Link>
-            </div>
-            <div className="link-wrapper">
-              <Link to="/projects">
-                <Button image="laptop" content="Projects" />
-              </Link>
-            </div>
-            <div className="link-wrapper">
-              <Link to="/resume">
-                <Button image="resume" content="Résumé" />
-              </Link>
-            </div>
-          </div>
+    <div className="App-details-box">
+      <h1 className="App-quick-about">
+        I'm a{" "}
+        <span style={{ color: "#edbbb4" }}>
+          software engineer / web developer
+        </span>{" "}
+        from Baltimore, Maryland. I love building web apps and typing really
+        fast.
+      </h1>
+      <div className="link-container">
+        <div className="link-wrapper">
+          <Link to="/about">
+            <Button image="glasses" content="About" />
+          </Link>
+        </div>
+        <div className="link-wrapper">
+          <Link to="/projects">
+            <Button image="laptop" content="Projects" />
+          </Link>
+        </div>
+        <div className="link-wrapper">
+          <Link to="/resume">
+            <Button image="resume" content="Résumé" />
+          </Link>
         </div>
       </div>
     </div>
