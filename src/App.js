@@ -68,23 +68,17 @@ const Home = () => (
         from Baltimore, Maryland. I love building web apps and typing really
         fast.
       </h1>
-      <div className="link-container">
-        <div className="link-wrapper">
-          <Link to="/about">
-            <Button image="glasses" content="About" />
-          </Link>
-        </div>
-        <div className="link-wrapper">
-          <Link to="/projects">
-            <Button image="laptop" content="Projects" />
-          </Link>
-        </div>
-        <div className="link-wrapper">
-          <Link to="/resume">
-            <Button image="resume" content="Résumé" />
-          </Link>
-        </div>
-      </div>
+    </div>
+    <div className="App-links-wrapper">
+      <Link to="/about">
+        <Button image="glasses" content="About" />
+      </Link>
+      <Link to="/projects">
+        <Button image="laptop" content="Projects" />
+      </Link>
+      <Link to="/resume">
+        <Button image="resume" content="Résumé" />
+      </Link>
     </div>
   </div>
 );

@@ -1,10 +1,19 @@
 .button-wrapper {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
   transition: transform 0.5s;
   padding-bottom: 10vh;
   width: 18rem;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.button-wrapper h1 {
+  color: #edbbb4;
+  font-size: calc(10px + 3vmin);
+  font-family: "Merriweather", serif;
 }
 .glasses {
   background-image: url("../../Assets/myglasses.png");
@@ -23,34 +32,7 @@
 .button-wrapper:hover {
   transform: scale(1.1);
 }
-.button-wrapper h1 {
-  padding: 1vh 0 10vh;
-  color: #edbbb4;
-}
+
 .button-wrapper h1:hover {
   color: #e64a36;
-}
-
-@media screen and (max-width: 425px) {
-  .button-wrapper {
-    width: 35vw;
-    transform: scale(1.5);
-    margin: 1vh 0 5vh 0;
-  }
-  .button-wrapper h1 {
-    padding: 1vh 0 0vh 0;
-    color: #edbbb4;
-  }
-  .laptop {
-    background-position-y: -1.8vh;
-  }
-  .glasses {
-    background-position-y: -1vh;
-    padding-bottom: 5vh;
-  }
-  .resume {
-    background-size: 85%;
-    background-position-y: 1.2vh;
-    background-position-x: 3vw;
-  }
 }
