@@ -2,47 +2,42 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
 }
 
-/**
- * Homepage wrapper
- */
-
 .HomePage-wrapper {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 100vw;
-  height: 100vh;
   background-color: #fff;
-  overflow-y: hidden;
-  animation: hide-overflow 0.5s forwards 2s;
 }
-@keyframes hide-overflow {
-  from {
-    overflow-y: hidden;
-  }
-  to {
-    overflow-y: auto;
-  }
+.App-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 160px;
+  border: 2px solid black;
+  background-color: #78e3fd;
+  animation: slide-up 1s ease-in-out forwards 1.5s;
 }
-
-/**
- * Homepage wrapper
- */
-
-/**
- * Nav bar
- */
+.App-tyler-name-wrapper {
+  border: 2px solid black;
+}
 
 .gif-container {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   transform: scale(0);
-  margin-top: -8vh;
+  margin-top: 11vh;
   animation: scale 1s ease-in-out forwards 0.2s;
 }
 @keyframes scale {
@@ -53,30 +48,11 @@ a {
     transform: scale(1.3);
   }
 }
-.App-header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  border: 2px solid black;
-  background-color: #78e3fd;
-  padding-top: 6vh;
-  animation: slide-up 1s ease-in-out forwards 1.5s;
-}
 
-@keyframes dissapear {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-
-.home-icons {
+.App-home-icons {
   z-index: 5;
   opacity: 0;
-  display: flex;
+  display: none;
   margin: 0vh 0 0vh 30vw;
   animation: open 0.9s ease-in forwards 2.5s;
 }
@@ -155,62 +131,5 @@ a {
   /* margin: 0 10vw 0 1vw; */
 }
 
-@media screen and (max-width: 1100px) {
-  .greeting {
-    /* border: 2px solid black; */
-    font-size: 5rem;
-    color: #fff;
-  }
-  .details-box {
-    width: 90vw;
-    font-size: 12px;
-  }
-  .gif-container {
-    margin-top: -10vh;
-  }
-  .link-container {
-    flex-direction: column;
-    margin: 0vh 2vw 0 2vw;
-  }
-  .link-wrapper {
-    padding-left: 23vw;
-  }
-  .tyler-wrapper {
-    padding-top: 1vh;
-    padding-bottom: 10vh;
-    margin: -5vh 0vw 0 0vw;
-    overflow-y: hidden;
-  }
-  .details-objects-container {
-    display: flex;
-    margin: 0 10vw 0 1vw;
-  }
-
-  .home-icons {
-    display: none;
-  }
-  @keyframes open {
-    0% {
-      width: 0rem;
-    }
-    100% {
-      width: 0rem;
-      opacity: 1;
-    }
-  }
-  .details-box {
-    width: 100vw;
-  }
-  .details-box h1 {
-    text-align: center;
-  }
-
-  @keyframes scale {
-    0% {
-      transform: scale(0.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+@media screen and (min-width: 1024px) {
 }

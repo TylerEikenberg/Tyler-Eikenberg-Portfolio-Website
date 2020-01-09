@@ -29,11 +29,14 @@ function App() {
 const Home = () => (
   <div className="HomePage-wrapper">
     <header className="App-header">
-      <div className="tyler-wrapper">
+      <div className="App-tyler-name-wrapper">
         <Tyler />
       </div>
+      <div className="gif-container">
+        <TylerGif />
+      </div>
 
-      <div className="home-icons">
+      <div className="App-home-icons">
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -56,11 +59,6 @@ const Home = () => (
       </div>
     </header>
 
-    <div className="gif-container">
-      <span></span>
-      <TylerGif />
-      <span></span>
-    </div>
     <div className="details-box">
       <div className="details-objects-container">
         <div>
