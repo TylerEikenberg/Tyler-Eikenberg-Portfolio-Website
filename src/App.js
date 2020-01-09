@@ -28,7 +28,7 @@ function App() {
 
 const Home = () => (
   <div className="HomePage-wrapper">
-    <div className="name-wrapper">
+    <header className="App-header">
       <div className="tyler-wrapper">
         <Tyler />
       </div>
@@ -54,7 +54,7 @@ const Home = () => (
           <Icon className="icon" path={mdiEmailPlus} size={3} color="#fff" />
         </a>
       </div>
-    </div>
+    </header>
 
     <div className="gif-container">
       <span></span>
