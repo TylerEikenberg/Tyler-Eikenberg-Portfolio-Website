@@ -15,12 +15,13 @@
   color: #edbbb4;
   font-size: calc(10px + 3vmin);
   font-family: "Merriweather", serif;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 .Button-image {
   /* position: absolute; */
   max-width: 100%;
   /* margin-top: 8vh; */
+  border: 1px solid black;
 }
 .Résumé {
   /* border: 1px solid black; */
