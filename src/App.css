@@ -104,19 +104,26 @@ a {
   margin-top: 5vh;
 }
 
-@media screen and (min-width: 1024px) {
-  .App-links-wrapper {
-    flex-direction: row;
-    margin-top: 5vh;
-  }
+.App-footer-spacer {
+  width: 100vw;
+  height: 50px;
+  padding-bottom: 200px;
 }
-@media screen and (max-width: 375px) {
-  @keyframes scale {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1.1);
-    }
-  }
+.App-footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  width: 100vw;
+  background-color: var(--main-blue);
+  height: 100px;
+}
+.App-contact-icons-footer {
+  opacity: 0;
+  animation: fade-in 0.5s ease-in-out forwards 2s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
 }

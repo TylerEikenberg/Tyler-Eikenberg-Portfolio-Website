@@ -66,6 +66,45 @@ function App() {
           <Route path="/about" exact component={AboutPage} />
           <Route path="/resume" exact component={ResumePage} />
         </Switch>
+        <div className="App-footer-spacer"></div>
+        <footer className="App-footer">
+          <div className="App-contact-icons-footer">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-link"
+              href="https://github.com/TylerEikenberg"
+            >
+              <Icon
+                className="icon"
+                path={mdiGithubBox}
+                size={3}
+                color="#fff"
+              />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-link"
+              href="https://www.linkedin.com/in/tylereikenberg/"
+            >
+              <Icon
+                className="icon"
+                path={mdiLinkedinBox}
+                size={3}
+                color="#fff"
+              />
+            </a>
+            <a className="icon-link" href="mailto:tylereikenberg8195@gmail.com">
+              <Icon
+                className="icon"
+                path={mdiEmailPlus}
+                size={3}
+                color="#fff"
+              />
+            </a>
+          </div>
+        </footer>
       </div>
     </Router>
   );
