@@ -1,34 +1,31 @@
 .button-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 5vh;
   transition: transform 0.5s;
-  padding-bottom: 10vh;
   width: 18rem;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.button-wrapper h1 {
+.Button-name {
+  position: absolute;
   color: #edbbb4;
   font-size: calc(10px + 3vmin);
   font-family: "Merriweather", serif;
+  /* border: 1px solid black; */
 }
-.glasses {
-  background-image: url("../../Assets/myglasses.png");
-  background-position-y: -3vh;
+.Button-image {
+  /* position: absolute; */
+  max-width: 100%;
+  /* margin-top: 8vh; */
 }
-.laptop {
-  background-image: url("../../Assets/laptopcode.png");
-  background-position-y: -6vh;
+.Résumé {
+  /* border: 1px solid black; */
 }
-.resume {
-  background-image: url("../../Assets/resume.png");
-  background-size: 85%;
-  background-position-y: 0vh;
-  background-position-x: 1.5vw;
-}
+
 .button-wrapper:hover {
   transform: scale(1.1);
 }

@@ -102,7 +102,6 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 5vh;
-  border: 2px solid black;
 }
 
 @media screen and (min-width: 1024px) {

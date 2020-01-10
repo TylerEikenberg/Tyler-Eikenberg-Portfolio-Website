@@ -11,6 +11,8 @@ import Tyler from "./Components/Tyler/Tyler";
 import Button from "./Components/Button/Button";
 import TylerGif from "./Components/TylerGIF/TylerGIF";
 
+import { glasses, laptop, resume } from "./Assets/";
+
 function App() {
   return (
     <Router>
@@ -71,13 +73,13 @@ const Home = () => (
     </div>
     <div className="App-links-wrapper">
       <Link to="/about">
-        <Button image="glasses" content="About" />
+        <Button image={glasses} content="About" />
       </Link>
       <Link to="/projects">
-        <Button image="laptop" content="Projects" />
+        <Button image={laptop} content="Projects" />
       </Link>
       <Link to="/resume">
-        <Button image="resume" content="Résumé" />
+        <Button image={resume} content="Résumé" />
       </Link>
     </div>
   </div>

@@ -3,9 +3,11 @@ import "./Button.css";
 
 const Button = props => {
   let { content, image } = props;
+  let resumeClassName = image === "resume" ? "Button-resume-image" : null;
   return (
-    <div className={`button-wrapper ${image}`}>
-      <h1>{content}</h1>
+    <div className={`button-wrapper ${content}`}>
+      <h1 className="Button-name">{content}</h1>
+      <img className="Button-image" src={image} alt="oopsy" />
     </div>
   );
 };
