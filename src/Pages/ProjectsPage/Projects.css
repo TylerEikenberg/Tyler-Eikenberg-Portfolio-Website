@@ -10,45 +10,17 @@
   animation: fade-in 0.8s ease-in forwards;
   color: var(--sub-color);
 }
-.nav-bar {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  height: 15vh;
-  background-color: #78e3fd;
-  padding-top: 3vh;
-}
-.gif-container_projects {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -8vh;
-}
-.home-icons_projects {
-  z-index: 5;
-  display: flex;
-  margin: 0vh 0 0vh 30vw;
-}
 
-.projects-header {
-  display: flex;
-  justify-content: space-between;
-}
-.projects-header h1 {
-  font-size: 50px;
-}
-
-.projects-container {
+.Projects-container {
   /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 5vh;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   animation: fade-in 0.8s ease-in forwards;
 }
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -58,51 +30,14 @@
   }
 }
 
-.more-work-link {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5vh;
-}
-.more-work-link a {
-  color: #2c869d;
+.Projects-link-styles {
+  margin-top: 5vh;
+  color: var(--sub-color);
   font-family: "Merriweather", serif;
+  transition: color 0.3s;
+  padding-bottom: 30px;
 }
-.more-work-link a:hover {
-  color: #194b57;
-}
-/**
-|--------------------------------------------------
-| Mid page
-|--------------------------------------------------
-*/ /**
-|--------------------------------------------------
-| Mid page
-|--------------------------------------------------
-*/
 
-@media screen and (max-width: 425px) {
-  .tyler-wrapper {
-    padding-top: 1vh;
-    padding-bottom: 10vh;
-    margin: -5vh 0vw 0 0vw;
-    overflow-y: hidden;
-  }
-
-  .home-icons_projects {
-    display: none;
-  }
-  .more-work-link {
-    padding: 0 0 10vh 0;
-  }
-}
-@media screen and (max-width: 1060px) {
-  .projects-container {
-    transform: scale(0.9);
-    display: flex;
-    flex-direction: column;
-  }
-  .project-column-container {
-    display: flex;
-    justify-content: space-between;
-  }
+.Projects-link-styles:hover {
+  color: var(--sub-hover);
 }
