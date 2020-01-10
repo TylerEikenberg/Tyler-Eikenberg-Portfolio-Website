@@ -1,85 +1,43 @@
-.about-me-info {
+.About-page-wrapper {
   display: flex;
-  justify-content: space-between;
-  /* border: 2px solid green; */
-  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.About-page-title {
+  font-family: "Merriweather", serif;
+  margin: 15vh 0 0 0;
   animation: fade-in 0.8s ease-in forwards;
+  color: var(--sub-color);
 }
-
-@keyframes slide-on-up {
-  0% {
-    margin-top: 20vh;
-  }
-  100% {
-    margin-top: 2vh;
-  }
-}
-
-.photo-container {
-  width: 20rem;
+.About-photo-container {
+  width: 80vw;
   padding: 5rem 0 15rem 0;
-  max-height: 20rem;
-  /* border: 2px solid blue; */
   background-image: url("../../Assets/megoofin.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 10vw 0 0;
+  margin-top: 5vh;
   animation: slide-on-up 0.5s ease-in forwards;
 }
-.photo-container::after {
+.About-photo-container::after {
   z-index: -1;
   position: absolute;
   content: "";
-  width: 20rem;
-  padding: 5rem 0 13.5rem 0;
+  width: 75vw;
+  height: 70vw;
   margin-left: 3rem;
   background-color: #78e3fd;
 }
 
-.about-me-details {
+.About-page-details {
+  margin-top: 10vh;
   padding: 5vh;
   background-color: #edbbb4;
-  width: 40vw;
+  width: 90vw;
   font-family: "Merriweather", serif;
   line-height: 2em;
-  color: #131515;
-  animation: slide-on-up 0.7s ease-in forwards;
+  color: #000;
 }
-.top-details {
-  padding-bottom: 2vh;
-}
-.gif-container_projects {
-  transform: scale(1.3);
-}
-
-@media screen and (max-width: 425px) {
-  .about-me-details {
-    width: 90vw;
-    margin: auto;
-    text-align: center;
-  }
-
-  .about-me-info {
-    flex-direction: column;
-    flex-direction: column-reverse;
-  }
-
-  .photo-container {
-    background-size: 90%;
-    width: 16rem;
-    margin: auto;
-  }
-  .photo-container::after {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    width: 14rem;
-    padding: 5rem 0 8rem 0;
-    margin-left: 3rem;
-    background-color: #78e3fd;
-  }
-
-  .gif-container_projects {
-    transform: scale(1);
-  }
+.About-details-top {
+  padding-bottom: 5vh;
 }
