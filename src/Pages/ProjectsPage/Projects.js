@@ -1,16 +1,16 @@
 import React from "react";
 import "./Projects.css";
 
-import TylerGif from "../Components/TylerGIF/TylerGIF";
-import Tyler from "../Components/Tyler/Tyler";
-import Project from "../Components/Project/Project";
+import TylerGif from "../../Components/TylerGIF/TylerGIF";
+import Tyler from "../../Components/Tyler/Tyler";
+import Project from "../../Components/Project/Project";
 
 import { mdiGithubBox, mdiLinkedinBox, mdiEmailPlus } from "@mdi/js";
 import Icon from "@mdi/react";
 
-import totoro from "../Assets/totoro.png";
-import burger from "../Assets/burger.png";
-import dog from "../Assets/gdawg.png";
+import { totoro } from "../../Assets/";
+import burger from "../../Assets/burger.png";
+import dog from "../../Assets/gdawg.png";
 
 function Projects() {
   return (
