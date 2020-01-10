@@ -161,3 +161,14 @@ a {
     height: 100px;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  @keyframes scale {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
