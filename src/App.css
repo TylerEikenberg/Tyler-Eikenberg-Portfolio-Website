@@ -24,7 +24,7 @@ a {
   align-items: center;
   width: 100vw;
   height: 160px;
-  background-color: #78e3fd;
+  background-color: var(--main-blue);
   animation: slide-up 1s ease-in-out forwards 1.5s;
 }
 .App-tyler-name-wrapper {

@@ -1,7 +1,14 @@
-.ProjectPage-wrapper {
-  width: 100%;
-  max-width: 100vw;
-  background-color: #fff;
+.Projects-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Projects-page-title {
+  font-family: "Merriweather", serif;
+  margin: 15vh 0 0 0;
+  animation: fade-in 0.8s ease-in forwards;
+  color: var(--sub-color);
 }
 .nav-bar {
   position: relative;
@@ -26,13 +33,9 @@
 .projects-header {
   display: flex;
   justify-content: space-between;
-  font-family: "Merriweather", serif;
-  margin: 5vh 0 0 0;
-  animation: fade-in 0.8s ease-in forwards;
 }
 .projects-header h1 {
   font-size: 50px;
-  color: #edbbb4;
 }
 
 .projects-container {

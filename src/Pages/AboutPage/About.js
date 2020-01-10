@@ -1,9 +1,7 @@
 import React from "react";
 import "./About.css";
 import "../ProjectsPage/Projects.css";
-import TylerGif from "../../Components/TylerGIF/TylerGIF";
-import Tyler from "../../Components/Tyler/Tyler";
-
+import { TylerGif, Tyler } from "../../Components";
 import { mdiGithubBox, mdiLinkedinBox, mdiEmailPlus } from "@mdi/js";
 import Icon from "@mdi/react";
 

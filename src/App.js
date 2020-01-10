@@ -15,6 +15,51 @@ function App() {
   return (
     <Router>
       <div className="wrapper">
+        <header className="App-header">
+          <div className="App-tyler-name-wrapper">
+            <Tyler />
+          </div>
+          <div className="App-gif-container">
+            <TylerGif />
+          </div>
+
+          <div className="App-home-icons">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-link"
+              href="https://github.com/TylerEikenberg"
+            >
+              <Icon
+                className="icon"
+                path={mdiGithubBox}
+                size={3}
+                color="#fff"
+              />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-link"
+              href="https://www.linkedin.com/in/tylereikenberg/"
+            >
+              <Icon
+                className="icon"
+                path={mdiLinkedinBox}
+                size={3}
+                color="#fff"
+              />
+            </a>
+            <a className="icon-link" href="mailto:tylereikenberg8195@gmail.com">
+              <Icon
+                className="icon"
+                path={mdiEmailPlus}
+                size={3}
+                color="#fff"
+              />
+            </a>
+          </div>
+        </header>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/projects" exact component={ProjectsPage} />
@@ -28,37 +73,6 @@ function App() {
 
 const Home = () => (
   <div className="HomePage-wrapper">
-    <header className="App-header">
-      <div className="App-tyler-name-wrapper">
-        <Tyler />
-      </div>
-      <div className="App-gif-container">
-        <TylerGif />
-      </div>
-
-      <div className="App-home-icons">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="icon-link"
-          href="https://github.com/TylerEikenberg"
-        >
-          <Icon className="icon" path={mdiGithubBox} size={3} color="#fff" />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="icon-link"
-          href="https://www.linkedin.com/in/tylereikenberg/"
-        >
-          <Icon className="icon" path={mdiLinkedinBox} size={3} color="#fff" />
-        </a>
-        <a className="icon-link" href="mailto:tylereikenberg8195@gmail.com">
-          <Icon className="icon" path={mdiEmailPlus} size={3} color="#fff" />
-        </a>
-      </div>
-    </header>
-
     <div className="App-details-box">
       <h1 className="App-quick-about">
         I'm a{" "}

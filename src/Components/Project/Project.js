@@ -1,6 +1,5 @@
 import React from "react";
 import "./Project.css";
-
 import { mdiGithubBox, mdiWeb } from "@mdi/js";
 import Icon from "@mdi/react";
 
