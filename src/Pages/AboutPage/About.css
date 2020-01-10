@@ -6,7 +6,7 @@
 }
 .About-page-title {
   font-family: "Merriweather", serif;
-  margin: 15vh 0 0 0;
+  margin: 18vh 0 0 0;
   animation: fade-in 0.8s ease-in forwards;
   color: var(--sub-color);
 }

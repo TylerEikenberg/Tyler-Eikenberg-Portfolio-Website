@@ -1,9 +1,6 @@
 import React from "react";
 import "./About.css";
 import "../ProjectsPage/Projects.css";
-import { TylerGif, Tyler } from "../../Components";
-import { mdiGithubBox, mdiLinkedinBox, mdiEmailPlus } from "@mdi/js";
-import Icon from "@mdi/react";
 
 export default function About() {
   return (
