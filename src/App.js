@@ -16,48 +16,53 @@ function App() {
     <Router>
       <div className="wrapper">
         <header className="App-header">
-          <div className="App-tyler-name-wrapper">
-            <Tyler />
-          </div>
-          <div className="App-gif-container">
-            <TylerGif />
-          </div>
+          <div className="App-desktop-items-container">
+            <div className="App-tyler-name-wrapper">
+              <Tyler />
+            </div>
+            <div className="App-gif-container">
+              <TylerGif />
+            </div>
 
-          <div className="App-home-icons">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="icon-link"
-              href="https://github.com/TylerEikenberg"
-            >
-              <Icon
-                className="icon"
-                path={mdiGithubBox}
-                size={3}
-                color="#fff"
-              />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="icon-link"
-              href="https://www.linkedin.com/in/tylereikenberg/"
-            >
-              <Icon
-                className="icon"
-                path={mdiLinkedinBox}
-                size={3}
-                color="#fff"
-              />
-            </a>
-            <a className="icon-link" href="mailto:tylereikenberg8195@gmail.com">
-              <Icon
-                className="icon"
-                path={mdiEmailPlus}
-                size={3}
-                color="#fff"
-              />
-            </a>
+            <div className="App-home-icons">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon-link"
+                href="https://github.com/TylerEikenberg"
+              >
+                <Icon
+                  className="icon"
+                  path={mdiGithubBox}
+                  size={3}
+                  color="#fff"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon-link"
+                href="https://www.linkedin.com/in/tylereikenberg/"
+              >
+                <Icon
+                  className="icon"
+                  path={mdiLinkedinBox}
+                  size={3}
+                  color="#fff"
+                />
+              </a>
+              <a
+                className="icon-link"
+                href="mailto:tylereikenberg8195@gmail.com"
+              >
+                <Icon
+                  className="icon"
+                  path={mdiEmailPlus}
+                  size={3}
+                  color="#fff"
+                />
+              </a>
+            </div>
           </div>
         </header>
         <Switch>
@@ -137,10 +142,3 @@ const Home = () => (
 );
 
 export default App;
-
-// <Link to="/">
-//             <Card color="pink" size="mobile">
-//               <img src={airplane} />
-//               <h2>Book a Trip</h2>
-//             </Card>
-//           </Link>

@@ -27,6 +27,12 @@ a {
   background-color: var(--main-blue);
   animation: slide-up 1s ease-in-out forwards 1.5s;
 }
+.App-desktop-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .App-tyler-name-wrapper {
   margin: 0;
 }
@@ -35,7 +41,7 @@ a {
   display: flex;
   justify-content: space-between;
   transform: scale(0);
-  margin-top: 11vh;
+  margin-top: 15vh;
   animation: scale 1s ease-in-out forwards 0.2s;
 }
 @keyframes scale {
@@ -46,14 +52,10 @@ a {
     transform: scale(1.3);
   }
 }
-
 .App-home-icons {
-  z-index: 5;
-  opacity: 0;
   display: none;
-  margin: 0vh 0 0vh 30vw;
-  animation: open 0.9s ease-in forwards 2.5s;
 }
+
 @keyframes open {
   0% {
   }
@@ -70,13 +72,6 @@ a {
   transform: scale(1.1);
 }
 
-/**
- * Nav bar
- */
-
-/**
- * details box
- */
 .App-details-box {
   opacity: 0;
   margin-top: 15vh;
@@ -126,4 +121,43 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 70vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .App-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .App-desktop-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vw;
+  }
+  .App-tyler-name-wrapper {
+    margin-top: 5vh;
+  }
+  .App-gif-container {
+    position: static;
+    transform: scale(0);
+    margin-top: 11vh;
+    animation: scale 1s ease-in-out forwards 0.2s;
+  }
+  .App-home-icons {
+    display: flex;
+    margin-top: 5vh;
+    opacity: 0;
+    animation: open 0.9s ease-in forwards 0.5s;
+  }
+  .App-footer {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    width: 100vw;
+    background-color: var(--main-blue);
+    height: 100px;
+  }
 }
