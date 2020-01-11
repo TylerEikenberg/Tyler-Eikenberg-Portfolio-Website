@@ -52,10 +52,10 @@
   }
   .About-photo-details-wrapper {
     margin-top: 5vh;
-    max-width: 55vw;
+    max-width: 80vw;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     /* border: 2px solid; */
   }
   .About-page-details {
