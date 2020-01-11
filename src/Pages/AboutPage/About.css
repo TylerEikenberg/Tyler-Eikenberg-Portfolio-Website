@@ -46,13 +46,13 @@
   .About-page-title {
     font-size: 3rem;
     font-family: "Merriweather", serif;
-    margin: 18vh 0 0 0;
+    margin: 10vh 0 0 0;
     animation: fade-in 0.8s ease-in forwards;
     color: var(--sub-color);
   }
   .About-photo-details-wrapper {
     margin-top: 5vh;
-    max-width: 70vw;
+    max-width: 55vw;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -68,7 +68,8 @@
     color: #000;
   }
   .About-photo-container {
-    max-width: 35%;
+    max-width: 20rem;
+    max-height: 20rem;
     padding: 5rem 0 15rem 0;
     background-image: url("../../Assets/megoofin.jpg");
     background-size: cover;
@@ -81,8 +82,8 @@
     z-index: -1;
     position: absolute;
     content: "";
-    max-width: 25%;
-    height: 40%;
+    max-width: 20rem;
+    max-height: 20rem;
     margin-left: 3rem;
     background-color: #78e3fd;
   }
