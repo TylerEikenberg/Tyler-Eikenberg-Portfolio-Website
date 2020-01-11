@@ -20,6 +20,7 @@ function App() {
             <div className="App-tyler-name-wrapper">
               <Tyler />
             </div>
+
             <div className="App-gif-container">
               <TylerGif />
             </div>

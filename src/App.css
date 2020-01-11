@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -13,7 +13,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100vw;
+  width: 100vw;
   background-color: #fff;
 }
 .App-header {
@@ -62,14 +62,6 @@ a {
   100% {
     opacity: 1;
   }
-}
-
-.App-icons {
-  transition: transform 0.3s;
-  margin: 0 1vw 0 0vw;
-}
-.App-icons:hover {
-  transform: scale(1.1);
 }
 
 .App-details-box {
@@ -130,18 +122,23 @@ a {
   .App-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
   }
   .App-desktop-items-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 60vw;
+    justify-content: space-around;
+    width: 80%;
+    margin-right: 6vw;
   }
   .App-tyler-name-wrapper {
     margin-top: 5vh;
   }
   .App-gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: static;
     transform: scale(0);
     margin-top: 11vh;
@@ -153,6 +150,13 @@ a {
     opacity: 0;
     animation: open 0.9s ease-in forwards 0.5s;
   }
+  .App-icons {
+    transition: transform 0.3s;
+  }
+  .App-icons:hover {
+    transform: scale(1.1);
+  }
+
   .App-quick-about {
     line-height: 70px;
   }

@@ -1,7 +1,6 @@
 .project-body-wrapper {
   width: 90vw;
   margin-top: 50px;
-  border: 2px solid;
 }
 
 .project-header {
@@ -49,7 +48,6 @@
   .project-body-wrapper {
     width: 50vw;
     margin-top: 50px;
-    border: 2px solid;
   }
   .project-picture {
     border: 3px solid #edbbb4;
