@@ -1,39 +1,38 @@
-.button-wrapper {
-  position: relative;
+.Button-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 1vh;
-  transition: transform 0.5s;
-  width: 18rem;
-  max-height: 230px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* border: 1px solid black; */
+  justify-content: center;
+  width: 100vw;
 }
 .Button-name {
-  position: absolute;
-  color: #edbbb4;
-  font-size: calc(10px + 3vmin);
+  font-size: 2rem;
   font-family: "Merriweather", serif;
-  margin-top: 4.5vh;
+  color: var(--sub-color);
   /* border: 1px solid black; */
+  margin: 0;
+  padding: 0;
 }
 .Button-image {
-  /* position: absolute; */
   max-width: 100%;
-  /* margin-top: 8vh; */
-  /* border: 1px solid black; */
-}
-.Résumé {
+  max-height: 100%;
   /* border: 1px solid black; */
 }
 
-.button-wrapper:hover {
-  transform: scale(1.1);
-}
-
-.button-wrapper h1:hover {
-  color: #e64a36;
+@media only screen and (min-width: 768px) {
+  .Button-wrapper {
+    width: 20vw;
+  }
+  .Button-name {
+    transition: transform 0.3s;
+  }
+  .Button-name:hover {
+    transform: scale(1.1);
+  }
+  .Button-image {
+    transition: transform 0.3s;
+  }
+  .Button-image:hover {
+    transform: scale(1.1);
+  }
 }
