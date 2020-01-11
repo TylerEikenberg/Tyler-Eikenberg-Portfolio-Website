@@ -129,8 +129,8 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 80%;
-    margin-right: 6vw;
+    width: 70%;
+    margin-right: 3vw;
   }
   .App-tyler-name-wrapper {
     margin-top: 5vh;
@@ -146,9 +146,11 @@ a {
   }
   .App-home-icons {
     display: flex;
+    justify-content: space-between;
     margin-top: 5vh;
     opacity: 0;
     animation: open 0.9s ease-in forwards 0.5s;
+    width: 20%;
   }
   .App-icons {
     transition: transform 0.3s;
