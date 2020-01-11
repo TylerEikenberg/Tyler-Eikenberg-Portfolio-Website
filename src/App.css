@@ -64,11 +64,11 @@ a {
   }
 }
 
-.icon {
+.App-icons {
   transition: transform 0.3s;
   margin: 0 1vw 0 0vw;
 }
-.icon:hover {
+.App-icons:hover {
   transform: scale(1.1);
 }
 
@@ -87,16 +87,19 @@ a {
 }
 .App-quick-about {
   text-align: center;
+  line-height: 40px;
   color: #131515;
   font-family: "Merriweather", serif;
   font-size: calc(10px + 3vmin);
 }
 .App-links-wrapper {
+  opacity: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 5vh;
+  animation: fade-in 0.5s ease-in-out forwards 2s;
 }
 
 .App-footer-spacer {
@@ -150,6 +153,16 @@ a {
     opacity: 0;
     animation: open 0.9s ease-in forwards 0.5s;
   }
+  .App-quick-about {
+    line-height: 70px;
+  }
+  .App-links-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70vw;
+    margin-top: 5vh;
+  }
   .App-footer {
     position: static;
     display: flex;
@@ -159,6 +172,9 @@ a {
     width: 100vw;
     background-color: var(--main-blue);
     height: 100px;
+  }
+  .App-contact-icons-footer {
+    display: none;
   }
 }
 

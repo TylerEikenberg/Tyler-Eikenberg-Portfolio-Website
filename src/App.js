@@ -32,7 +32,7 @@ function App() {
                 href="https://github.com/TylerEikenberg"
               >
                 <Icon
-                  className="icon"
+                  className="App-icons"
                   path={mdiGithubBox}
                   size={3}
                   color="#fff"
@@ -45,7 +45,7 @@ function App() {
                 href="https://www.linkedin.com/in/tylereikenberg/"
               >
                 <Icon
-                  className="icon"
+                  className="App-icons"
                   path={mdiLinkedinBox}
                   size={3}
                   color="#fff"
@@ -56,7 +56,7 @@ function App() {
                 href="mailto:tylereikenberg8195@gmail.com"
               >
                 <Icon
-                  className="icon"
+                  className="App-icons"
                   path={mdiEmailPlus}
                   size={3}
                   color="#fff"
@@ -121,7 +121,7 @@ const Home = () => (
       <h1 className="App-quick-about">
         I'm a{" "}
         <span style={{ color: "#edbbb4" }}>
-          software engineer / web developer
+          web developer / software engineer
         </span>{" "}
         from Baltimore, Maryland. I love building web apps and typing really
         fast.
