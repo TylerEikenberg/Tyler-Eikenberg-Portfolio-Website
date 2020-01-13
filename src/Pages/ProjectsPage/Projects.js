@@ -11,6 +11,23 @@ function Projects() {
       <div className="Projects-container">
         <Project
           picture={totoro}
+          github="https://github.com/TylerEikenberg/GitHub-User-Search"
+          deployed="https://github-users-te.netlify.com/"
+        >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-link"
+            href="https://github-users-te.netlify.com/"
+          >
+            GitHub User Search
+          </a>
+          Built with React, this project was an excercise in state management
+          using Redux. This web app allows you to search for users on GitHub and
+          displays an Instagram style profile for each user.
+        </Project>
+        <Project
+          picture={totoro}
           github="https://github.com/TylerEikenberg/Studio-Ghibli-Project-Repos"
           deployed="https://studio-ghibli-movie-database.netlify.com/"
         >
