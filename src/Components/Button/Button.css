@@ -1,56 +1,38 @@
-.button-wrapper {
-  text-align: center;
-  transition: transform 0.5s;
-  padding-bottom: 10vh;
-  width: 18rem;
-  background-repeat: no-repeat;
-  background-size: cover;
+.Button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
 }
-.glasses {
-  background-image: url("../../Assets/myglasses.png");
-  background-position-y: -3vh;
+.Button-name {
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+  color: var(--sub-color);
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 0;
 }
-.laptop {
-  background-image: url("../../Assets/laptopcode.png");
-  background-position-y: -6vh;
-}
-.resume {
-  background-image: url("../../Assets/resume.png");
-  background-size: 85%;
-  background-position-y: 0vh;
-  background-position-x: 1.5vw;
-}
-.button-wrapper:hover {
-  transform: scale(1.1);
-}
-.button-wrapper h1 {
-  padding: 1vh 0 10vh;
-  color: #edbbb4;
-}
-.button-wrapper h1:hover {
-  color: #e64a36;
+.Button-image {
+  max-width: 100%;
+  max-height: 100%;
+  /* border: 1px solid black; */
 }
 
-@media screen and (max-width: 425px) {
-  .button-wrapper {
-    width: 35vw;
-    transform: scale(1.5);
-    margin: 1vh 0 5vh 0;
+@media only screen and (min-width: 768px) {
+  .Button-wrapper {
+    width: 20vw;
   }
-  .button-wrapper h1 {
-    padding: 1vh 0 0vh 0;
-    color: #edbbb4;
+  .Button-name {
+    transition: transform 0.3s;
   }
-  .laptop {
-    background-position-y: -1.8vh;
+  .Button-name:hover {
+    transform: scale(1.1);
   }
-  .glasses {
-    background-position-y: -1vh;
-    padding-bottom: 5vh;
+  .Button-image {
+    transition: transform 0.3s;
   }
-  .resume {
-    background-size: 85%;
-    background-position-y: 1.2vh;
-    background-position-x: 3vw;
+  .Button-image:hover {
+    transform: scale(1.1);
   }
 }

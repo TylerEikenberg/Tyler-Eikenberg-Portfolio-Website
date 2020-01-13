@@ -1,48 +1,47 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-/**
- * Homepage wrapper
- */
-
 .HomePage-wrapper {
-  width: 100%;
-  max-width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
   background-color: #fff;
-  overflow-y: hidden;
-  animation: hide-overflow 0.5s forwards 2s;
 }
-@keyframes hide-overflow {
-  from {
-    overflow-y: hidden;
-  }
-  to {
-    overflow-y: auto;
-  }
+.App-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 160px;
+  background-color: var(--main-blue);
+  animation: slide-up 1s ease-in-out forwards 1.5s;
 }
-
-/**
- * Homepage wrapper
- */
-
-/**
- * Nav bar
- */
-
-.gif-container {
+.App-desktop-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App-tyler-name-wrapper {
+  margin: 0;
+}
+.App-gif-container {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   transform: scale(0);
-  margin-top: -8vh;
+  margin-top: 15vh;
   animation: scale 1s ease-in-out forwards 0.2s;
 }
 @keyframes scale {
@@ -53,33 +52,10 @@ a {
     transform: scale(1.3);
   }
 }
-.App-header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  /* border: 2px solid black; */
-  background-color: #78e3fd;
-  padding-top: 6vh;
-  animation: slide-up 1s ease-in-out forwards 1.5s;
+.App-home-icons {
+  display: none;
 }
 
-@keyframes dissapear {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-
-.home-icons {
-  z-index: 5;
-  opacity: 0;
-  display: flex;
-  margin: 0vh 0 0vh 30vw;
-  animation: open 0.9s ease-in forwards 2.5s;
-}
 @keyframes open {
   0% {
   }
@@ -88,28 +64,11 @@ a {
   }
 }
 
-.icon {
-  transition: transform 0.3s;
-  margin: 0 1vw 0 0vw;
-}
-.icon:hover {
-  transform: scale(1.1);
-}
-
-/**
- * Nav bar
- */
-
-/**
- * details box
- */
-.details-box {
+.App-details-box {
   opacity: 0;
-  color: #f3f6fa;
+  margin-top: 15vh;
   width: 90vw;
-  margin: 5vh 1vw 0 5vw;
   animation: fade-in 0.5s ease-in-out forwards 2s;
-  /* border: 2px solid green; */
 }
 @keyframes fade-in {
   0% {
@@ -118,96 +77,117 @@ a {
     opacity: 1;
   }
 }
-.details-box h1 {
-  margin-top: 1vh;
+.App-quick-about {
+  text-align: center;
+  line-height: 40px;
   color: #131515;
   font-family: "Merriweather", serif;
+  font-size: calc(10px + 3vmin);
 }
-.details-box span {
-  color: #edbbb4;
-  text-decoration: underline;
-}
-
-.details-quick-about {
-  text-align: center;
-}
-.link-container {
-  width: 80vw;
+.App-links-wrapper {
+  opacity: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 3vh 0 0 3vw;
-  padding: 1vh 0 1vh 0;
-  /* border: 2px solid black; */
-}
-.link-wrapper {
-  padding: 1vh;
-  /* border: 2px solid black; */
-  overflow-y: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  animation: fade-in 0.5s ease-in-out forwards 2s;
 }
 
-/**
- * details box
- */
-
-.details-objects-container {
+.App-footer-spacer {
+  width: 100vw;
+  height: 50px;
+  padding-bottom: 200px;
+}
+.App-footer {
+  position: fixed;
   display: flex;
-  /* margin: 0 10vw 0 1vw; */
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  width: 100vw;
+  background-color: var(--main-blue);
+  height: 100px;
+}
+.App-contact-icons-footer {
+  opacity: 0;
+  animation: fade-in 0.5s ease-in-out forwards 2s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
 }
 
-@media screen and (max-width: 1100px) {
-  .greeting {
-    /* border: 2px solid black; */
-    font-size: 5rem;
-    color: #fff;
-  }
-  .details-box {
-    width: 90vw;
-    font-size: 12px;
-  }
-  .gif-container {
-    margin-top: -10vh;
-  }
-  .link-container {
-    flex-direction: column;
-    margin: 0vh 2vw 0 2vw;
-  }
-  .link-wrapper {
-    padding-left: 23vw;
-  }
-  .tyler-wrapper {
-    padding-top: 1vh;
-    padding-bottom: 10vh;
-    margin: -5vh 0vw 0 0vw;
-    overflow-y: hidden;
-  }
-  .details-objects-container {
+@media only screen and (min-width: 768px) {
+  .App-header {
     display: flex;
-    margin: 0 10vw 0 1vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .App-desktop-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 3vw;
+  }
+  .App-tyler-name-wrapper {
+    margin-top: 5vh;
+  }
+  .App-gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    transform: scale(0);
+    margin-top: 11vh;
+    animation: scale 1s ease-in-out forwards 0.2s;
+  }
+  .App-home-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+    opacity: 0;
+    animation: open 0.9s ease-in forwards 0.5s;
+    width: 20%;
+  }
+  .App-icons {
+    transition: transform 0.3s;
+  }
+  .App-icons:hover {
+    transform: scale(1.1);
   }
 
-  .home-icons {
+  .App-quick-about {
+    line-height: 70px;
+  }
+  .App-links-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70vw;
+    margin-top: 5vh;
+  }
+  .App-footer {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    width: 100vw;
+    background-color: var(--main-blue);
+    height: 100px;
+  }
+  .App-contact-icons-footer {
     display: none;
   }
-  @keyframes open {
-    0% {
-      width: 0rem;
-    }
-    100% {
-      width: 0rem;
-      opacity: 1;
-    }
-  }
-  .details-box {
-    width: 100vw;
-  }
-  .details-box h1 {
-    text-align: center;
-  }
+}
 
+@media only screen and (max-width: 375px) {
   @keyframes scale {
     0% {
-      transform: scale(0.1);
+      transform: scale(0);
     }
     100% {
       transform: scale(1);

@@ -1,7 +1,6 @@
 .project-body-wrapper {
-  width: 20rem;
-  margin: 1vh 0 1vh 0;
-  /* border: 2px solid; */
+  width: 90vw;
+  margin-top: 50px;
 }
 
 .project-header {
@@ -22,34 +21,14 @@
 }
 
 .project-picture {
-  border: 5px solid #edbbb4;
-  width: 20rem;
-  height: 20rem;
+  border: 3px solid #edbbb4;
+  max-width: 90vw;
+  height: 300px;
   background-size: 80%;
   background-position-x: 50%;
   background-position-y: 50%;
   background-repeat: no-repeat;
   background-color: #fff;
-}
-.project-picture::after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  width: 20rem;
-  height: 20rem;
-  margin-top: 3rem;
-  margin-left: 3rem;
-  background-color: #edbbb4;
-  clip-path: polygon(
-    30% 0%,
-    100% 0,
-    100% 30%,
-    100% 84%,
-    84% 100%,
-    30% 100%,
-    0 100%,
-    0 0
-  );
 }
 .project-details {
   text-align: center;
@@ -58,7 +37,6 @@
   font-family: "Merriweather", serif;
   font-size: 14px;
 }
-
 .Project-icon-container {
   display: flex;
   justify-content: space-around;
@@ -66,43 +44,25 @@
   background-color: #edbbb4;
 }
 
-@media screen and (max-width: 425px) {
-  .tyler-wrapper {
-    padding-top: 1vh;
-    padding-bottom: 10vh;
-    margin: -5vh 0vw 0 0vw;
-    overflow-y: hidden;
-  }
-
-  .home-icons_projects {
-    display: none;
-  }
-
-  .project-picture::after {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .project-body-wrapper {
     width: 50vw;
-    margin: 1vh 0 1vh 0;
-    /* border: 2px solid; */
+    margin-top: 50px;
   }
   .project-picture {
-    width: 50vw;
-    background-size: 40%;
+    border: 3px solid #edbbb4;
+    max-width: 90vw;
+    height: 300px;
+    background-size: 35%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-color: #fff;
   }
-  .github-container {
-    /* border: 2px solid black; */
-    padding: 1vh 1vw 1vh 1vw;
-    display: flex;
-    justify-content: space-between;
-  }
-  .Project-icon {
+  .icon-link {
     transition: transform 0.3s;
   }
-  .Project-icon:hover {
-    transform: scale(1.05);
+  .icon-link:hover {
+    transform: scale(1.1);
   }
 }

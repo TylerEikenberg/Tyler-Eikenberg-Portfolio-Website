@@ -1,0 +1,53 @@
+.Projects-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Projects-page-title {
+  font-family: "Merriweather", serif;
+  margin: 15vh 0 0 0;
+  animation: fade-in 0.8s ease-in forwards;
+  color: var(--sub-color);
+}
+
+.Projects-container {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  justify-content: space-around;
+  animation: fade-in 0.8s ease-in forwards;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Projects-link-styles {
+  margin-top: 5vh;
+  color: var(--sub-color);
+  font-family: "Merriweather", serif;
+  transition: color 0.3s;
+  padding-bottom: 30px;
+}
+
+.Projects-link-styles:hover {
+  color: var(--sub-hover);
+}
+
+@media only screen and (min-width: 768px) {
+  .Projects-page-title {
+    font-family: "Merriweather", serif;
+    margin: 10vh 0 0 0;
+    font-size: 3rem;
+    animation: fade-in 0.8s ease-in forwards;
+    color: var(--sub-color);
+  }
+}
