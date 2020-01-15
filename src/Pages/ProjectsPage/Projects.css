@@ -42,6 +42,12 @@
   color: var(--sub-hover);
 }
 
+.Project-h3-about {
+  font-size: calc(10px + 2vmin);
+  line-height: 1.7rem;
+  padding: 5px;
+}
+
 @media only screen and (min-width: 768px) {
   .Projects-page-title {
     font-family: "Merriweather", serif;
@@ -49,5 +55,9 @@
     font-size: 3rem;
     animation: fade-in 0.8s ease-in forwards;
     color: var(--sub-color);
+  }
+  .Project-h3-about {
+    font-size: calc(10px + 1vmin);
+    line-height: 2.5rem;
   }
 }

@@ -22,9 +22,11 @@ function Projects() {
           >
             GitHub User Search
           </a>
-          Built with React, this project was an excercise in state management
-          using Redux. This web app allows you to search for users on GitHub and
-          displays an Instagram style profile for each user.
+          <h3 className="Project-h3-about">
+            Built with React, this project was an excercise in state management
+            using Redux. This web app allows you to search for users on GitHub
+            and displays an Instagram style profile for each user.
+          </h3>
         </Project>
         <Project
           picture={totoro}
@@ -39,11 +41,13 @@ function Projects() {
           >
             Studio Ghibli Database
           </a>
-          As an excercise in building and utilizing API's I created an API of
-          data from Studio Ghibli movies with JavaScript, Express, and MongoDB.
-          Built with React; this website allows users to create, update, and
-          delete their own characters as well as learn about various films from
-          Studio Ghibli.
+          <h3 className="Project-h3-about">
+            As an excercise in building and utilizing API's I created an API of
+            data from Studio Ghibli movies with JavaScript, Express, and
+            MongoDB. Built with React; this website allows users to create,
+            update, and delete their own characters as well as learn about
+            various films from Studio Ghibli.
+          </h3>
         </Project>
         <Project
           picture={burger}
@@ -58,11 +62,13 @@ function Projects() {
           >
             DeliCious
           </a>
-          Working with a group of 2 other developers, we created an API that
-          gathered data from 100 of the best restaurants in Washington, DC, then
-          we created a front-end website for viewing these restaurants with
-          React. The website allows users to search through 100 different
-          restaurants and leave their own reviews.
+          <h3 className="Project-h3-about">
+            Working with a group of 2 other developers, we created an API that
+            gathered data from 100 of the best restaurants in Washington, DC,
+            then we created a front-end website for viewing these restaurants
+            with React. The website allows users to search through 100 different
+            restaurants and leave their own reviews.
+          </h3>
         </Project>
         <Project
           picture={dog}
@@ -77,10 +83,12 @@ function Projects() {
           >
             Galaxy Dawg
           </a>
-          Built in about 3 days, the goal of this project was to create a game
-          with JavaScript. Galaxy Dawg is a top-down, shoot-em-up game where you
-          play as Commander Pup and must prevent the alien forces from reaching
-          your home planet.
+          <h3 className="Project-h3-about">
+            Built in about 3 days, the goal of this project was to create a game
+            with JavaScript. Galaxy Dawg is a top-down, shoot-em-up game where
+            you play as Commander Pup and must prevent the alien forces from
+            reaching your home planet.
+          </h3>
         </Project>
       </div>
 
