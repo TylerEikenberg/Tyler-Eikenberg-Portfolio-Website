@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import { Project } from "../../Components/";
-import { totoro, burger, dog } from "../../Assets/";
+import { totoro, burger, dog, octocat } from "../../Assets/";
 
 function Projects() {
   return (
@@ -10,7 +10,7 @@ function Projects() {
 
       <div className="Projects-container">
         <Project
-          picture={totoro}
+          picture={octocat}
           github="https://github.com/TylerEikenberg/GitHub-User-Search"
           deployed="https://github-users-te.netlify.com/"
         >
